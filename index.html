@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#365f4b">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Meal Plan">
+<title>Dusty & Sam Meal Plan</title>
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icons/icon-192.png">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="app-shell">
+<header class="app-header"><div><p class="eyebrow">Weekly meal plan</p><h1 id="app-title">Loading…</h1><p id="date-range" class="date-range"></p></div><button id="refresh-button" class="icon-button" type="button" aria-label="Refresh plan">↻</button></header>
+<section class="week-controls"><label for="week-select">Week</label><select id="week-select"></select><p id="update-status" class="status-text" aria-live="polite"></p></section>
+<nav class="primary-nav" aria-label="Main sections"><button class="nav-button active" data-view="today">Today</button><button class="nav-button" data-view="week">Week</button><button class="nav-button" data-view="groceries">Groceries</button><button class="nav-button" data-view="archive">Past Weeks</button></nav>
+<main id="main-content" tabindex="-1">
+<section id="view-today" class="view active"><div id="today-content"></div></section>
+<section id="view-week" class="view"><div class="section-heading"><div><p class="eyebrow">Full plan</p><h2>This week</h2></div></div><div id="day-tabs" class="day-tabs"></div><div id="day-content"></div></section>
+<section id="view-groceries" class="view"><div class="section-heading grocery-heading"><div><p class="eyebrow">Copy into your household list</p><h2>Groceries</h2></div><button id="copy-groceries" class="primary-button">Copy list</button></div><textarea id="grocery-text" class="grocery-text" readonly></textarea><p id="copy-status" class="status-text" aria-live="polite"></p></section>
+<section id="view-archive" class="view"><div class="section-heading"><div><p class="eyebrow">Meal-plan history</p><h2>Past weeks</h2></div></div><div id="archive-list" class="archive-list"></div></section>
+</main>
+<footer class="app-footer"><p id="footer-version">Meal Plan PWA</p></footer>
+</div>
+<div id="error-panel" class="error-panel hidden" role="alert"><h2>Couldn’t load the meal plan</h2><p id="error-message"></p></div>
+<script src="./app.js" defer></script>
+</body>
+</html>
