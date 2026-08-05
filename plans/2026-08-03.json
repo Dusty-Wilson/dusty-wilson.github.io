@@ -1,0 +1,61 @@
+{
+  "id": "2026-08-03",
+  "title": "August 3–9, 2026",
+  "startDate": "2026-08-03",
+  "endDate": "2026-08-09",
+  "updatedAt": "2026-08-04",
+  "days": [
+    {
+      "day": "Monday", "date": "2026-08-03",
+      "breakfast": {"name":"MIND smoothie","dusty":["½ smoothie batch","2 scrambled eggs","1 tsp avocado oil"],"sam":["½ smoothie batch","Add 1 egg only if still hungry"],"note":"Shared batch: 2 cups blueberries, 1 banana, 1 packed cup spinach, 2½ cups creamy oat milk, 2 tbsp honey, 1½ scoops OWYN protein powder, and 1 tsp ground flaxseed."},
+      "lunch": {"name":"Turkey sandwich","dusty":["2 slices Dave’s Killer Bread","5 oz deli turkey","1 slice cheese","Spinach and tomato","1 tsp mustard","1 apple"],"sam":["1 open-faced slice Dave’s Killer Bread","4 oz deli turkey","1 slice cheese","Spinach and tomato","1 tsp mustard","1 fruit"]},
+      "dinner": {"name":"Crockpot chicken fajitas","dusty":["7 oz cooked chicken","2 small tortillas","2 cups peppers and onions","¼ cup shredded cheese","2 tbsp salsa","1 tbsp sour cream"],"sam":["5 oz cooked chicken","1 small tortilla","1½ cups peppers and onions","2 tbsp shredded cheese","2 tbsp salsa","1 tbsp sour cream"],"note":"Cook extra chicken for Wednesday dinner and Thursday lunch."},
+      "dayNotes": []
+    },
+    {
+      "day": "Tuesday", "date": "2026-08-04",
+      "breakfast": {"name":"Poet’s Coffee","dusty":["Farm Egg","Unsweetened coffee, Americano, or drip coffee"],"sam":["Farm Egg","Stop when comfortably satisfied"],"note":"Use The Hobbs as an occasional comfort choice rather than the twice-weekly default."},
+      "lunch": {"name":"Leftover fajita bowl","dusty":["6 oz chicken","¾ cup cooked rice","2 cups vegetables and lettuce","2 tbsp salsa","2 tbsp shredded cheese"],"sam":["4 oz chicken","½ cup cooked rice","1½ cups vegetables and lettuce","2 tbsp salsa","1 tbsp shredded cheese"]},
+      "dinner": {"name":"Spaghetti and turkey meatballs","dusty":["1¼ cups cooked spaghetti","5 meatballs, about 6 oz total","¾ cup pasta sauce","2 cups broccoli","1 tbsp Parmesan"],"sam":["¾ cup cooked spaghetti","3–4 meatballs, about 4 oz total","½ cup pasta sauce","1½ cups broccoli","2 tsp Parmesan"],"note":"Make extra meatballs for Wednesday lunch."},
+      "dayNotes": []
+    },
+    {
+      "day": "Wednesday", "date": "2026-08-05",
+      "breakfast": {"name":"MIND smoothie","dusty":["½ smoothie batch","2 scrambled eggs","1 tsp avocado oil"],"sam":["½ smoothie batch","Add 1 egg only if hungry"]},
+      "lunch": {"name":"Meatball leftovers","dusty":["5 meatballs","¾ cup cooked pasta","½ cup sauce","1½ cups broccoli"],"sam":["3 meatballs","½ cup cooked pasta","⅓ cup sauce","1½ cups broccoli"]},
+      "dinner": {"name":"Chicken Caesar wraps","dusty":["6 oz chicken","1 large spinach tortilla","2 cups romaine","2 tbsp Caesar dressing","1 tbsp Parmesan"],"sam":["4 oz chicken","1 small tortilla","1½ cups romaine","1 tbsp Caesar dressing","2 tsp Parmesan"]},
+      "dayNotes": []
+    },
+    {
+      "day": "Thursday", "date": "2026-08-06",
+      "breakfast": {"name":"MIND smoothie","dusty":["½ smoothie batch","2 scrambled eggs","1 tsp avocado oil"],"sam":["½ smoothie batch","Add 1 egg only if hungry"]},
+      "lunch": {"name":"Chicken Caesar salad","dusty":["6 oz chicken","3 cups romaine","2 tbsp Caesar dressing","1 tbsp Parmesan","1 slice Dave’s Killer Bread"],"sam":["4 oz chicken","2½ cups romaine","1 tbsp Caesar dressing","2 tsp Parmesan"]},
+      "dinner": {"name":"Mediterranean bowls","dusty":["6 oz turkey sausage","¾ cup cooked rice","2 cups broccoli and carrots","2 tbsp tzatziki","2 tbsp feta"],"sam":["4 oz turkey sausage","½ cup cooked rice","1½–2 cups vegetables","1 tbsp tzatziki","1 tbsp feta"]},
+      "dayNotes": []
+    },
+    {
+      "day": "Friday", "date": "2026-08-07",
+      "breakfast": {"name":"Poet’s Coffee","dusty":["Farm Egg","Unsweetened coffee"],"sam":["Farm Egg","Stop when satisfied"],"note":"Friday can be the flexible Poet’s day. One person may choose The Hobbs; skip pastries and sweetened drinks."},
+      "lunch": {"name":"Leftover Mediterranean bowl","dusty":["6 oz turkey sausage","¾ cup cooked rice","2 cups vegetables","2 tbsp tzatziki","2 tbsp feta"],"sam":["4 oz turkey sausage","½ cup cooked rice","1½–2 cups vegetables","1 tbsp tzatziki","1 tbsp feta"]},
+      "dinner": {"name":"Salmon burgers, potatoes, and green beans","dusty":["1 salmon burger","1 multigrain bun or 2 bread slices","8 oz roasted potatoes","2 cups green beans","1 tbsp sauce or mayonnaise"],"sam":["1 salmon burger","½ bun or 1 open-faced bread slice","5 oz roasted potatoes","1½ cups green beans","2 tsp sauce"]},
+      "dayNotes": []
+    },
+    {
+      "day": "Saturday", "date": "2026-08-08",
+      "breakfast": {"name":"Eggs, toast, and berries","dusty":["3 eggs","1 tsp avocado oil","2 slices Dave’s Killer Bread","1 cup berries"],"sam":["2 eggs","½ tsp avocado oil","1 slice Dave’s Killer Bread","¾ cup berries"]},
+      "lunch": {"name":"Turkey snack plate","dusty":["5 oz deli turkey","1 cheese stick","1 apple","1½ cups raw vegetables","6 whole-grain crackers"],"sam":["4 oz deli turkey","1 cheese stick","1 fruit","1 cup raw vegetables","4 whole-grain crackers"]},
+      "dinner": {"name":"Big Mac bowls","dusty":["6 oz lean ground beef","¾ cup cooked rice","2½ cups shredded lettuce","¼ cup onion and pickles","¼ cup shredded cheese","2 tbsp Thousand Island dressing"],"sam":["4 oz lean ground beef","½ cup cooked rice","2 cups shredded lettuce","¼ cup onion and pickles","2 tbsp shredded cheese","1 tbsp Thousand Island dressing"]},
+      "dayNotes": []
+    },
+    {
+      "day": "Sunday", "date": "2026-08-09",
+      "breakfast": {"name":"Oatmeal, berries, and eggs","dusty":["½ cup dry oats","¾ cup berries","2 eggs","1 tsp honey"],"sam":["⅓ cup dry oats","½ cup berries","1 egg","1 tsp honey"]},
+      "lunch": {"name":"Leftover Big Mac bowl","dusty":["6 oz lean ground beef","¾ cup cooked rice","2½ cups lettuce","¼ cup onion and pickles","¼ cup shredded cheese","2 tbsp Thousand Island dressing"],"sam":["4 oz lean ground beef","½ cup cooked rice","2 cups lettuce","¼ cup onion and pickles","2 tbsp shredded cheese","1 tbsp Thousand Island dressing"]},
+      "dinner": {"name":"Planned takeout","dusty":["Mediterranean: chicken shawarma or shish tawook, ¾ cup rice, 2 tbsp sauce","Mexican: 6–7 oz chicken, ¾ cup rice, ¼ cup beans, 2 tbsp cheese, 1 tbsp sour cream, up to 12 chips","Chick-fil-A: grilled sandwich or grilled nuggets, fruit cup or side salad, ½ sauce packet"],"sam":["Mediterranean: chicken shawarma or shish tawook, ½ cup rice, 1 tbsp sauce","Mexican: 4–5 oz chicken, ½ cup rice, ¼ cup beans, 1 tbsp cheese, 1 tbsp sour cream, up to 8 chips","Chick-fil-A: grilled sandwich or grilled nuggets, fruit cup or side salad, ½ sauce packet"],"note":"Takeout is intentional. Keep sauces on the side and use the listed portions."},
+      "dayNotes": []
+    }
+  ],
+  "groceries": [
+    "Boneless chicken breasts or thighs: 6 lb","Lean ground turkey: 2 lb","Lean turkey sausage: 1½ lb","Salmon burger patties: 4–6","Lean ground beef: 1½ lb","Deli turkey: 2 lb","Eggs: 30","Plain Greek yogurt: two 32 oz containers","Cheese sticks: 10–12","OWYN protein powder: at least 4½ scoops","Shredded cheese: 12 oz","Parmesan: 5–6 oz","Feta: 4 oz","Frozen blueberries: 8 cups","Fresh berries: 4 cups","Bananas: 3","Fresh spinach: 3 packed cups","Bell peppers: 9","Onions: 5","Romaine: 3 large heads or equivalent","Broccoli: 8 cups florets","Carrots: 2 lb","Green beans: 1½ lb","Potatoes: 3 lb","Apples or comparable fruit: 12","Tomatoes: 4","Raw snack vegetables: 6–8 cups","Dill pickles: 1 jar","Lemons: 2","Dave’s Killer Bread Sprouted Whole Grains: 1 loaf","Nature’s Own Crafted Multigrain: 1 loaf","Small tortillas: 1 package","Large spinach tortillas: 1 package","Spaghetti: 1 lb","Rice: about 4 cups dry","Old-fashioned oats: 1 container","Whole-grain crackers: 1 box","Salmon burger buns, optional: 1 package","Creamy oat milk: 8 cups","Tzatziki: 8 oz","Caesar dressing: 8 oz","Thousand Island dressing: 8 oz","Sour cream: 8 oz","Pasta sauce: two 24 oz jars","Salsa: 1 jar","Ground flaxseed","Honey","Avocado oil"
+  ]
+}
