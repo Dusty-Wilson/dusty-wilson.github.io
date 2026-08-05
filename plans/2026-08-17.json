@@ -1,0 +1,415 @@
+{
+  "id": "2026-08-17",
+  "title": "August 17–23, 2026",
+  "startDate": "2026-08-17",
+  "endDate": "2026-08-23",
+  "updatedAt": "2026-08-05",
+  "days": [
+    {
+      "day": "Monday",
+      "date": "2026-08-17",
+      "breakfast": {
+        "name": "MIND smoothie",
+        "dusty": [
+          "½ smoothie batch",
+          "2 scrambled eggs",
+          "1 tsp avocado oil"
+        ],
+        "sam": [
+          "½ smoothie batch",
+          "Add 1 egg only if still hungry"
+        ],
+        "note": "Shared batch: 2 cups blueberries, 1 banana, 1 packed cup spinach, 2½ cups creamy oat milk, 2 tbsp honey, 1½ scoops OWYN protein powder, and 1 tsp ground flaxseed."
+      },
+      "lunch": {
+        "name": "Turkey sandwich",
+        "dusty": [
+          "2 slices Dave’s Killer Bread",
+          "5 oz deli turkey",
+          "1 slice cheese",
+          "Spinach and tomato",
+          "1 tsp mustard",
+          "1 apple"
+        ],
+        "sam": [
+          "1 open-faced slice Dave’s Killer Bread",
+          "4 oz deli turkey",
+          "1 slice cheese",
+          "Spinach and tomato",
+          "1 tsp mustard",
+          "1 fruit"
+        ]
+      },
+      "dinner": {
+        "name": "Crockpot chicken fajitas",
+        "dusty": [
+          "7 oz cooked chicken",
+          "2 small tortillas",
+          "2 cups peppers and onions",
+          "¼ cup shredded cheese",
+          "2 tbsp salsa",
+          "1 tbsp sour cream"
+        ],
+        "sam": [
+          "5 oz cooked chicken",
+          "1 small tortilla",
+          "1½ cups peppers and onions",
+          "2 tbsp shredded cheese",
+          "2 tbsp salsa",
+          "1 tbsp sour cream"
+        ],
+        "note": "Cook enough chicken and vegetables for Tuesday lunch."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-08-18",
+      "breakfast": {
+        "name": "Poet’s Coffee",
+        "dusty": [
+          "Farm Egg",
+          "Unsweetened coffee, Americano, or drip coffee"
+        ],
+        "sam": [
+          "Farm Egg",
+          "Stop when comfortably satisfied"
+        ],
+        "note": "The Hobbs remains the occasional comfort choice."
+      },
+      "lunch": {
+        "name": "Leftover fajita bowl",
+        "dusty": [
+          "6 oz chicken",
+          "¾ cup cooked rice",
+          "2 cups peppers, onions, and lettuce",
+          "2 tbsp salsa",
+          "2 tbsp shredded cheese"
+        ],
+        "sam": [
+          "4 oz chicken",
+          "½ cup cooked rice",
+          "1½ cups peppers, onions, and lettuce",
+          "2 tbsp salsa",
+          "1 tbsp shredded cheese"
+        ]
+      },
+      "dinner": {
+        "name": "Spinach lasagna with side salad",
+        "dusty": [
+          "1 portion equal to ⅙ of a 9×13 pan",
+          "2 cups side salad",
+          "2 tbsp vinaigrette"
+        ],
+        "sam": [
+          "1 portion equal to ⅛ of a 9×13 pan",
+          "1½ cups side salad",
+          "1 tbsp vinaigrette"
+        ],
+        "note": "Use part-skim ricotta and mozzarella. Save two adult portions for Wednesday lunch."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Wednesday",
+      "date": "2026-08-19",
+      "breakfast": {
+        "name": "MIND smoothie",
+        "dusty": [
+          "½ smoothie batch",
+          "2 scrambled eggs",
+          "1 tsp avocado oil"
+        ],
+        "sam": [
+          "½ smoothie batch",
+          "Add 1 egg only if hungry"
+        ]
+      },
+      "lunch": {
+        "name": "Spinach lasagna leftovers",
+        "dusty": [
+          "1 portion equal to ⅙ of the pan",
+          "1½ cups side salad",
+          "1 tbsp vinaigrette"
+        ],
+        "sam": [
+          "1 portion equal to ⅛ of the pan",
+          "1½ cups side salad",
+          "1 tbsp vinaigrette"
+        ]
+      },
+      "dinner": {
+        "name": "Mediterranean bowls",
+        "dusty": [
+          "6 oz turkey sausage",
+          "¾ cup cooked rice",
+          "2 cups broccoli and carrots",
+          "2 tbsp tzatziki",
+          "2 tbsp feta"
+        ],
+        "sam": [
+          "4 oz turkey sausage",
+          "½ cup cooked rice",
+          "1½–2 cups broccoli and carrots",
+          "1 tbsp tzatziki",
+          "1 tbsp feta"
+        ],
+        "note": "Prepare enough for Thursday lunch."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-08-20",
+      "breakfast": {
+        "name": "MIND smoothie",
+        "dusty": [
+          "½ smoothie batch",
+          "2 scrambled eggs",
+          "1 tsp avocado oil"
+        ],
+        "sam": [
+          "½ smoothie batch",
+          "Add 1 egg only if hungry"
+        ]
+      },
+      "lunch": {
+        "name": "Leftover Mediterranean bowl",
+        "dusty": [
+          "6 oz turkey sausage",
+          "¾ cup cooked rice",
+          "2 cups vegetables",
+          "2 tbsp tzatziki",
+          "2 tbsp feta"
+        ],
+        "sam": [
+          "4 oz turkey sausage",
+          "½ cup cooked rice",
+          "1½–2 cups vegetables",
+          "1 tbsp tzatziki",
+          "1 tbsp feta"
+        ]
+      },
+      "dinner": {
+        "name": "Cajun shrimp and rice",
+        "dusty": [
+          "7 oz shrimp",
+          "¾ cup cooked rice",
+          "2 cups green beans and bell pepper",
+          "1 tbsp finishing butter or sauce"
+        ],
+        "sam": [
+          "5 oz shrimp",
+          "½ cup cooked rice",
+          "1½ cups green beans and bell pepper",
+          "2 tsp finishing butter or sauce"
+        ],
+        "note": "Cook enough shrimp, rice, and vegetables for Friday lunch."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Friday",
+      "date": "2026-08-21",
+      "breakfast": {
+        "name": "Poet’s Coffee",
+        "dusty": [
+          "Farm Egg",
+          "Unsweetened coffee"
+        ],
+        "sam": [
+          "Farm Egg",
+          "Stop when satisfied"
+        ],
+        "note": "Friday remains the flexible Poet’s breakfast."
+      },
+      "lunch": {
+        "name": "Leftover Cajun shrimp bowl",
+        "dusty": [
+          "6 oz shrimp",
+          "¾ cup cooked rice",
+          "2 cups vegetables",
+          "2 tsp finishing sauce"
+        ],
+        "sam": [
+          "4 oz shrimp",
+          "½ cup cooked rice",
+          "1½ cups vegetables",
+          "1 tsp finishing sauce"
+        ]
+      },
+      "dinner": {
+        "name": "Big Mac bowls",
+        "dusty": [
+          "6 oz lean ground beef",
+          "¾ cup cooked rice",
+          "2½ cups shredded lettuce",
+          "¼ cup onion and pickles",
+          "¼ cup shredded cheese",
+          "2 tbsp Thousand Island dressing"
+        ],
+        "sam": [
+          "4 oz lean ground beef",
+          "½ cup cooked rice",
+          "2 cups shredded lettuce",
+          "¼ cup onion and pickles",
+          "2 tbsp shredded cheese",
+          "1 tbsp Thousand Island dressing"
+        ],
+        "note": "Prepare enough for Saturday lunch."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-08-22",
+      "breakfast": {
+        "name": "Eggs, toast, and berries",
+        "dusty": [
+          "3 eggs",
+          "1 tsp avocado oil",
+          "2 slices Dave’s Killer Bread",
+          "1 cup berries"
+        ],
+        "sam": [
+          "2 eggs",
+          "½ tsp avocado oil",
+          "1 slice Dave’s Killer Bread",
+          "¾ cup berries"
+        ]
+      },
+      "lunch": {
+        "name": "Leftover Big Mac bowl",
+        "dusty": [
+          "6 oz lean ground beef",
+          "¾ cup cooked rice",
+          "2½ cups lettuce",
+          "¼ cup onion and pickles",
+          "¼ cup shredded cheese",
+          "2 tbsp Thousand Island dressing"
+        ],
+        "sam": [
+          "4 oz lean ground beef",
+          "½ cup cooked rice",
+          "2 cups lettuce",
+          "¼ cup onion and pickles",
+          "2 tbsp shredded cheese",
+          "1 tbsp Thousand Island dressing"
+        ]
+      },
+      "dinner": {
+        "name": "Hawaiian chicken tacos with pineapple slaw",
+        "dusty": [
+          "7 oz chicken",
+          "2 small tortillas",
+          "1½ cups pineapple slaw",
+          "2 tbsp salsa",
+          "2 tbsp shredded cheese"
+        ],
+        "sam": [
+          "5 oz chicken",
+          "1 small tortilla",
+          "1½ cups pineapple slaw",
+          "2 tbsp salsa",
+          "1 tbsp shredded cheese"
+        ],
+        "note": "Cook enough chicken and slaw for Sunday lunch."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-08-23",
+      "breakfast": {
+        "name": "Oatmeal, berries, and eggs",
+        "dusty": [
+          "½ cup dry oats",
+          "¾ cup berries",
+          "2 eggs",
+          "1 tsp honey"
+        ],
+        "sam": [
+          "⅓ cup dry oats",
+          "½ cup berries",
+          "1 egg",
+          "1 tsp honey"
+        ]
+      },
+      "lunch": {
+        "name": "Hawaiian chicken bowl",
+        "dusty": [
+          "6 oz chicken",
+          "¾ cup cooked rice",
+          "1½ cups pineapple slaw",
+          "2 tbsp salsa"
+        ],
+        "sam": [
+          "4 oz chicken",
+          "½ cup cooked rice",
+          "1½ cups pineapple slaw",
+          "2 tbsp salsa"
+        ]
+      },
+      "dinner": {
+        "name": "Planned takeout",
+        "dusty": [
+          "Mediterranean: chicken shawarma or shish tawook, ¾ cup rice, 2 tbsp sauce",
+          "Mexican: 6–7 oz chicken, ¾ cup rice, ¼ cup beans, 2 tbsp cheese, 1 tbsp sour cream, up to 12 chips",
+          "Chick-fil-A: grilled sandwich or grilled nuggets, fruit cup or side salad, ½ sauce packet"
+        ],
+        "sam": [
+          "Mediterranean: chicken shawarma or shish tawook, ½ cup rice, 1 tbsp sauce",
+          "Mexican: 4–5 oz chicken, ½ cup rice, ¼ cup beans, 1 tbsp cheese, 1 tbsp sour cream, up to 8 chips",
+          "Chick-fil-A: grilled sandwich or grilled nuggets, fruit cup or side salad, ½ sauce packet"
+        ],
+        "note": "Takeout is intentional. Keep sauces on the side and use the listed portions."
+      },
+      "dayNotes": []
+    }
+  ],
+  "groceries": [
+    "Boneless chicken breasts or thighs: 6 lb",
+    "Lean turkey sausage: 2 lb",
+    "Raw peeled shrimp: 2½ lb",
+    "Lean ground beef: 2½ lb",
+    "Deli turkey: 2 lb",
+    "Eggs: 30",
+    "Part-skim ricotta: 30 oz",
+    "Part-skim mozzarella: 16 oz",
+    "Cheese slices: 1 package",
+    "Shredded cheese: 12 oz",
+    "Parmesan: 5 oz",
+    "Feta: 4 oz",
+    "OWYN protein powder: at least 4½ scoops",
+    "Frozen blueberries: 6 cups",
+    "Fresh berries: 4 cups",
+    "Bananas: 3",
+    "Fresh spinach: 2 large containers",
+    "Bell peppers: 10",
+    "Onions: 6",
+    "Romaine or mixed salad greens: 4 large containers",
+    "Broccoli: 6 cups florets",
+    "Carrots: 2 lb",
+    "Green beans: 1½ lb",
+    "Green cabbage or slaw mix: 2 large bags",
+    "Pineapple chunks: 2 cans or 1 large fresh pineapple",
+    "Apples or comparable fruit: 12",
+    "Tomatoes: 4",
+    "Dill pickles: 1 jar",
+    "Dave’s Killer Bread Sprouted Whole Grains: 1 loaf",
+    "Small tortillas: 2 packages",
+    "Lasagna noodles: 1 box",
+    "Rice: about 5 cups dry",
+    "Old-fashioned oats: 1 container",
+    "Creamy oat milk: 8 cups",
+    "Pasta sauce: two 24 oz jars",
+    "Salsa: 1 jar",
+    "Sour cream: 8 oz",
+    "Tzatziki: 8 oz",
+    "Vinaigrette: 1 bottle",
+    "Thousand Island dressing: 1 bottle",
+    "Ground flaxseed",
+    "Honey",
+    "Avocado oil"
+  ]
+}
