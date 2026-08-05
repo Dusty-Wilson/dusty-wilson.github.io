@@ -1,0 +1,404 @@
+{
+  "id": "2026-08-10",
+  "title": "August 10–16, 2026",
+  "startDate": "2026-08-10",
+  "endDate": "2026-08-16",
+  "updatedAt": "2026-08-05",
+  "days": [
+    {
+      "day": "Monday",
+      "date": "2026-08-10",
+      "breakfast": {
+        "name": "MIND smoothie",
+        "dusty": [
+          "½ smoothie batch",
+          "2 scrambled eggs",
+          "1 tsp avocado oil"
+        ],
+        "sam": [
+          "½ smoothie batch",
+          "Add 1 egg only if still hungry"
+        ],
+        "note": "Shared batch: 2 cups blueberries, 1 banana, 1 packed cup spinach, 2½ cups creamy oat milk, 2 tbsp honey, 1½ scoops OWYN protein powder, and 1 tsp ground flaxseed."
+      },
+      "lunch": {
+        "name": "Turkey sandwich",
+        "dusty": [
+          "2 slices Dave’s Killer Bread",
+          "5 oz deli turkey",
+          "1 slice cheese",
+          "Spinach and tomato",
+          "1 tsp mustard",
+          "1 apple"
+        ],
+        "sam": [
+          "1 open-faced slice Dave’s Killer Bread",
+          "4 oz deli turkey",
+          "1 slice cheese",
+          "Spinach and tomato",
+          "1 tsp mustard",
+          "1 fruit"
+        ]
+      },
+      "dinner": {
+        "name": "Korean BBQ beef, baked potato, and slaw",
+        "dusty": [
+          "7 oz cooked lean beef",
+          "1 baked potato, about 8 oz",
+          "2 cups slaw",
+          "2 tbsp Korean BBQ sauce",
+          "1 tbsp light slaw dressing"
+        ],
+        "sam": [
+          "5 oz cooked lean beef",
+          "1 baked potato, about 5 oz",
+          "1½ cups slaw",
+          "1 tbsp Korean BBQ sauce",
+          "1 tbsp light slaw dressing"
+        ],
+        "note": "Cook enough beef and slaw for Tuesday lunch."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-08-11",
+      "breakfast": {
+        "name": "Poet’s Coffee",
+        "dusty": [
+          "Farm Egg",
+          "Unsweetened coffee, Americano, or drip coffee"
+        ],
+        "sam": [
+          "Farm Egg",
+          "Stop when comfortably satisfied"
+        ],
+        "note": "The Hobbs is fine as the occasional comfort choice; skip pastries or sweetened drinks when ordering it."
+      },
+      "lunch": {
+        "name": "Korean beef bowl",
+        "dusty": [
+          "6 oz Korean BBQ beef",
+          "¾ cup cooked rice",
+          "1½ cups slaw",
+          "1 tbsp extra sauce if needed"
+        ],
+        "sam": [
+          "4 oz Korean BBQ beef",
+          "½ cup cooked rice",
+          "1½ cups slaw",
+          "2 tsp extra sauce if needed"
+        ]
+      },
+      "dinner": {
+        "name": "Creamy orzo with turkey meatballs and spinach",
+        "dusty": [
+          "1¼ cups cooked orzo",
+          "5 turkey meatballs, about 6 oz total",
+          "1 cup spinach",
+          "¼ cup light cream sauce",
+          "1 tbsp Parmesan"
+        ],
+        "sam": [
+          "¾ cup cooked orzo",
+          "3–4 turkey meatballs, about 4 oz total",
+          "1 cup spinach",
+          "3 tbsp light cream sauce",
+          "2 tsp Parmesan"
+        ],
+        "note": "Make extra meatballs and orzo for Wednesday lunch."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Wednesday",
+      "date": "2026-08-12",
+      "breakfast": {
+        "name": "MIND smoothie",
+        "dusty": [
+          "½ smoothie batch",
+          "2 scrambled eggs",
+          "1 tsp avocado oil"
+        ],
+        "sam": [
+          "½ smoothie batch",
+          "Add 1 egg only if hungry"
+        ]
+      },
+      "lunch": {
+        "name": "Turkey meatball orzo leftovers",
+        "dusty": [
+          "5 meatballs",
+          "¾ cup cooked orzo",
+          "1 cup spinach",
+          "3 tbsp sauce"
+        ],
+        "sam": [
+          "3 meatballs",
+          "½ cup cooked orzo",
+          "1 cup spinach",
+          "2 tbsp sauce"
+        ]
+      },
+      "dinner": {
+        "name": "Sheet-pan curry chicken, peppers, and onions",
+        "dusty": [
+          "7 oz chicken",
+          "¾ cup cooked rice",
+          "2 cups peppers and onions",
+          "3 tbsp curry sauce"
+        ],
+        "sam": [
+          "5 oz chicken",
+          "½ cup cooked rice",
+          "1½ cups peppers and onions",
+          "2 tbsp curry sauce"
+        ],
+        "note": "Cook extra chicken and vegetables for Thursday lunch."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-08-13",
+      "breakfast": {
+        "name": "MIND smoothie",
+        "dusty": [
+          "½ smoothie batch",
+          "2 scrambled eggs",
+          "1 tsp avocado oil"
+        ],
+        "sam": [
+          "½ smoothie batch",
+          "Add 1 egg only if hungry"
+        ]
+      },
+      "lunch": {
+        "name": "Curry chicken leftovers",
+        "dusty": [
+          "6 oz chicken",
+          "¾ cup cooked rice",
+          "2 cups peppers and onions",
+          "2 tbsp curry sauce"
+        ],
+        "sam": [
+          "4 oz chicken",
+          "½ cup cooked rice",
+          "1½ cups peppers and onions",
+          "1½ tbsp curry sauce"
+        ]
+      },
+      "dinner": {
+        "name": "Ground turkey, carrot, and spinach rice bowls",
+        "dusty": [
+          "6 oz cooked ground turkey",
+          "¾ cup cooked rice",
+          "2 cups carrots and spinach",
+          "2 tbsp chipotle mayo"
+        ],
+        "sam": [
+          "4 oz cooked ground turkey",
+          "½ cup cooked rice",
+          "1½ cups carrots and spinach",
+          "1 tbsp chipotle mayo"
+        ],
+        "note": "Prepare enough for Friday lunch."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Friday",
+      "date": "2026-08-14",
+      "breakfast": {
+        "name": "Poet’s Coffee",
+        "dusty": [
+          "Farm Egg",
+          "Unsweetened coffee"
+        ],
+        "sam": [
+          "Farm Egg",
+          "Stop when satisfied"
+        ],
+        "note": "Friday remains the flexible Poet’s breakfast."
+      },
+      "lunch": {
+        "name": "Turkey rice bowl leftovers",
+        "dusty": [
+          "6 oz ground turkey",
+          "¾ cup cooked rice",
+          "2 cups carrots and spinach",
+          "2 tbsp chipotle mayo"
+        ],
+        "sam": [
+          "4 oz ground turkey",
+          "½ cup cooked rice",
+          "1½ cups carrots and spinach",
+          "1 tbsp chipotle mayo"
+        ]
+      },
+      "dinner": {
+        "name": "Cajun shrimp and rice",
+        "dusty": [
+          "7 oz shrimp",
+          "¾ cup cooked rice",
+          "2 cups green beans and bell pepper",
+          "1 tbsp butter or finishing sauce"
+        ],
+        "sam": [
+          "5 oz shrimp",
+          "½ cup cooked rice",
+          "1½ cups green beans and bell pepper",
+          "2 tsp butter or finishing sauce"
+        ]
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-08-15",
+      "breakfast": {
+        "name": "Eggs, toast, and berries",
+        "dusty": [
+          "3 eggs",
+          "1 tsp avocado oil",
+          "2 slices Dave’s Killer Bread",
+          "1 cup berries"
+        ],
+        "sam": [
+          "2 eggs",
+          "½ tsp avocado oil",
+          "1 slice Dave’s Killer Bread",
+          "¾ cup berries"
+        ]
+      },
+      "lunch": {
+        "name": "Turkey snack plate",
+        "dusty": [
+          "5 oz deli turkey",
+          "1 cheese stick",
+          "1 apple",
+          "1½ cups raw vegetables",
+          "6 whole-grain crackers"
+        ],
+        "sam": [
+          "4 oz deli turkey",
+          "1 cheese stick",
+          "1 fruit",
+          "1 cup raw vegetables",
+          "4 whole-grain crackers"
+        ]
+      },
+      "dinner": {
+        "name": "Hawaiian chicken tacos with pineapple slaw",
+        "dusty": [
+          "7 oz chicken",
+          "2 small tortillas",
+          "1½ cups pineapple slaw",
+          "2 tbsp salsa",
+          "2 tbsp shredded cheese"
+        ],
+        "sam": [
+          "5 oz chicken",
+          "1 small tortilla",
+          "1½ cups pineapple slaw",
+          "2 tbsp salsa",
+          "1 tbsp shredded cheese"
+        ],
+        "note": "Cook enough chicken and slaw for Sunday lunch."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-08-16",
+      "breakfast": {
+        "name": "Oatmeal, berries, and eggs",
+        "dusty": [
+          "½ cup dry oats",
+          "¾ cup berries",
+          "2 eggs",
+          "1 tsp honey"
+        ],
+        "sam": [
+          "⅓ cup dry oats",
+          "½ cup berries",
+          "1 egg",
+          "1 tsp honey"
+        ]
+      },
+      "lunch": {
+        "name": "Hawaiian chicken bowl",
+        "dusty": [
+          "6 oz chicken",
+          "¾ cup cooked rice",
+          "1½ cups pineapple slaw",
+          "2 tbsp salsa"
+        ],
+        "sam": [
+          "4 oz chicken",
+          "½ cup cooked rice",
+          "1½ cups pineapple slaw",
+          "2 tbsp salsa"
+        ]
+      },
+      "dinner": {
+        "name": "Planned takeout",
+        "dusty": [
+          "Mediterranean: chicken shawarma or shish tawook, ¾ cup rice, 2 tbsp sauce",
+          "Mexican: 6–7 oz chicken, ¾ cup rice, ¼ cup beans, 2 tbsp cheese, 1 tbsp sour cream, up to 12 chips",
+          "Chick-fil-A: grilled sandwich or grilled nuggets, fruit cup or side salad, ½ sauce packet"
+        ],
+        "sam": [
+          "Mediterranean: chicken shawarma or shish tawook, ½ cup rice, 1 tbsp sauce",
+          "Mexican: 4–5 oz chicken, ½ cup rice, ¼ cup beans, 1 tbsp cheese, 1 tbsp sour cream, up to 8 chips",
+          "Chick-fil-A: grilled sandwich or grilled nuggets, fruit cup or side salad, ½ sauce packet"
+        ],
+        "note": "Takeout is intentional. Keep sauces on the side and use the listed portions."
+      },
+      "dayNotes": []
+    }
+  ],
+  "groceries": [
+    "Lean beef roast or stew beef: 3½ lb",
+    "Lean ground turkey: 3½ lb",
+    "Boneless chicken breasts or thighs: 5 lb",
+    "Raw peeled shrimp: 2 lb",
+    "Deli turkey: 2 lb",
+    "Eggs: 30",
+    "Plain Greek yogurt: one 32 oz container",
+    "Cheese sticks: 8–10",
+    "OWYN protein powder: at least 4½ scoops",
+    "Shredded cheese: 8 oz",
+    "Parmesan: 5 oz",
+    "Frozen blueberries: 6 cups",
+    "Fresh berries: 4 cups",
+    "Bananas: 3",
+    "Fresh spinach: 2 large containers",
+    "Bell peppers: 9",
+    "Onions: 5",
+    "Carrots: 2 lb",
+    "Green beans: 1½ lb",
+    "Green cabbage or slaw mix: 3 large bags",
+    "Pineapple chunks: 2 cans or 1 large fresh pineapple",
+    "Potatoes: 4 large",
+    "Apples or comparable fruit: 12",
+    "Tomatoes: 4",
+    "Raw snack vegetables: 6–8 cups",
+    "Dave’s Killer Bread Sprouted Whole Grains: 1 loaf",
+    "Small tortillas: 1 package",
+    "Orzo: 1 lb",
+    "Rice: about 5 cups dry",
+    "Old-fashioned oats: 1 container",
+    "Whole-grain crackers: 1 box",
+    "Creamy oat milk: 8 cups",
+    "Korean BBQ sauce: 1 bottle",
+    "Light slaw dressing: 1 bottle",
+    "Light cream or half-and-half: 1 pint",
+    "Curry sauce: 1 jar",
+    "Chipotle mayonnaise: 1 bottle",
+    "Salsa: 1 jar",
+    "Ground flaxseed",
+    "Honey",
+    "Avocado oil"
+  ]
+}
