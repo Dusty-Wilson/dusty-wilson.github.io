@@ -1,0 +1,373 @@
+{
+  "id": "2026-08-10",
+  "title": "August 10–16, 2026",
+  "startDate": "2026-08-10",
+  "endDate": "2026-08-16",
+  "updatedAt": "2026-08-09",
+  "days": [
+    {
+      "day": "Monday",
+      "date": "2026-08-10",
+      "breakfast": {
+        "name": "MIND smoothie + eggs",
+        "dusty": [
+          "½ shared smoothie batch",
+          "2 scrambled eggs"
+        ],
+        "sam": [
+          "½ shared smoothie batch",
+          "1–2 scrambled eggs"
+        ],
+        "note": "Shared smoothie batch: 2 cups blueberries, 1 banana, 1 handful spinach, 2.5 cups creamy oat milk, 2 tbsp honey, 1.5 scoops OWYN protein powder, and 1 tsp ground flaxseed."
+      },
+      "lunch": {
+        "name": "Out / cannellini bean, tomato & orzo bowl",
+        "dusty": [
+          "Lunch out"
+        ],
+        "sam": [
+          "¾ cup cannellini beans",
+          "½ cup cooked orzo",
+          "Crushed tomatoes",
+          "Carrots",
+          "Garlic",
+          "Spinach",
+          "Parmesan, optional"
+        ],
+        "note": "Sam: make two servings; reserve the second for Wednesday."
+      },
+      "dinner": {
+        "name": "Turkey meatball Mediterranean bowls",
+        "dusty": [
+          "5 turkey meatballs",
+          "¾ cup cooked brown rice",
+          "1½ cups roasted broccoli + carrots",
+          "2 tbsp tzatziki"
+        ],
+        "sam": [
+          "4 turkey meatballs",
+          "½ cup cooked brown rice",
+          "1½ cups roasted broccoli + carrots",
+          "2 tbsp tzatziki"
+        ],
+        "note": "Make a large batch of turkey meatballs; reserve enough for Tuesday pasta night."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-08-11",
+      "breakfast": {
+        "name": "Poets",
+        "dusty": [
+          "Breakfast at Poets"
+        ],
+        "sam": [
+          "Breakfast at Poets"
+        ],
+        "note": "Breakfast out."
+      },
+      "lunch": {
+        "name": "Leftover Mediterranean bowls",
+        "dusty": [
+          "4 turkey meatballs",
+          "¾ cup cooked brown rice",
+          "Generous leftover vegetables",
+          "Tzatziki"
+        ],
+        "sam": [
+          "3 turkey meatballs",
+          "½ cup cooked brown rice",
+          "Generous leftover vegetables",
+          "Tzatziki"
+        ],
+        "note": ""
+      },
+      "dinner": {
+        "name": "Spaghetti & turkey meatballs + roasted broccoli",
+        "dusty": [
+          "2 oz dry whole-wheat spaghetti",
+          "5 turkey meatballs",
+          "¾ cup marinara",
+          "1½ cups roasted broccoli",
+          "Parmesan"
+        ],
+        "sam": [
+          "1½ oz dry whole-wheat spaghetti",
+          "4 turkey meatballs",
+          "½–¾ cup marinara",
+          "1½ cups roasted broccoli",
+          "Parmesan"
+        ],
+        "note": ""
+      },
+      "dayNotes": [
+        "Pasta night."
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "date": "2026-08-12",
+      "breakfast": {
+        "name": "MIND smoothie + eggs",
+        "dusty": [
+          "½ shared smoothie batch",
+          "2 scrambled eggs"
+        ],
+        "sam": [
+          "½ shared smoothie batch",
+          "1–2 scrambled eggs"
+        ],
+        "note": "Shared smoothie batch: 2 cups blueberries, 1 banana, 1 handful spinach, 2.5 cups creamy oat milk, 2 tbsp honey, 1.5 scoops OWYN protein powder, and 1 tsp ground flaxseed."
+      },
+      "lunch": {
+        "name": "Out / leftover cannellini bean, tomato & orzo bowl",
+        "dusty": [
+          "Lunch out"
+        ],
+        "sam": [
+          "Monday’s second serving",
+          "Add spinach when reheating if desired"
+        ],
+        "note": ""
+      },
+      "dinner": {
+        "name": "Cajun shrimp, brown rice & vegetables",
+        "dusty": [
+          "7 oz shrimp",
+          "¾ cup cooked brown rice",
+          "1½–2 cups peppers, onions + zucchini"
+        ],
+        "sam": [
+          "5 oz shrimp",
+          "½ cup cooked brown rice",
+          "1½ cups peppers, onions + zucchini"
+        ],
+        "note": "Make enough for Thursday lunch."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-08-13",
+      "breakfast": {
+        "name": "MIND smoothie + eggs",
+        "dusty": [
+          "½ shared smoothie batch",
+          "2 scrambled eggs"
+        ],
+        "sam": [
+          "½ shared smoothie batch",
+          "1–2 scrambled eggs"
+        ],
+        "note": "Shared smoothie batch: 2 cups blueberries, 1 banana, 1 handful spinach, 2.5 cups creamy oat milk, 2 tbsp honey, 1.5 scoops OWYN protein powder, and 1 tsp ground flaxseed."
+      },
+      "lunch": {
+        "name": "Leftover Cajun shrimp bowls",
+        "dusty": [
+          "6 oz shrimp",
+          "¾ cup cooked brown rice",
+          "Remaining vegetables"
+        ],
+        "sam": [
+          "4–5 oz shrimp",
+          "½ cup cooked brown rice",
+          "Remaining vegetables"
+        ],
+        "note": ""
+      },
+      "dinner": {
+        "name": "Dinner with friends",
+        "dusty": [
+          "Dinner with friends"
+        ],
+        "sam": [
+          "Dinner with friends"
+        ],
+        "note": "No home dinner planned."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Friday",
+      "date": "2026-08-14",
+      "breakfast": {
+        "name": "Poets",
+        "dusty": [
+          "Breakfast at Poets"
+        ],
+        "sam": [
+          "Breakfast at Poets"
+        ],
+        "note": "Breakfast out."
+      },
+      "lunch": {
+        "name": "Turkey & hummus wraps + fruit",
+        "dusty": [
+          "1 large whole-grain wrap",
+          "4 oz sliced turkey",
+          "3 tbsp hummus",
+          "Spinach",
+          "Cucumber",
+          "Tomato",
+          "Apple or berries"
+        ],
+        "sam": [
+          "1 smaller whole-grain wrap",
+          "3 oz sliced turkey",
+          "2 tbsp hummus",
+          "Spinach",
+          "Cucumber",
+          "Tomato",
+          "Fruit"
+        ],
+        "note": ""
+      },
+      "dinner": {
+        "name": "Sheet-pan curry chicken, peppers & onions + rice",
+        "dusty": [
+          "7 oz chicken",
+          "¾ cup cooked brown rice",
+          "2 cups peppers + onions"
+        ],
+        "sam": [
+          "5 oz chicken",
+          "½ cup cooked brown rice",
+          "1½–2 cups peppers + onions"
+        ],
+        "note": "Make enough for Saturday lunch."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-08-15",
+      "breakfast": {
+        "name": "Eggs, sprouted-grain toast & berries",
+        "dusty": [
+          "2 eggs",
+          "2 slices sprouted-grain toast",
+          "Berries"
+        ],
+        "sam": [
+          "2 eggs",
+          "1 slice sprouted-grain toast",
+          "Berries"
+        ],
+        "note": ""
+      },
+      "lunch": {
+        "name": "Leftover curry chicken bowls",
+        "dusty": [
+          "6 oz chicken",
+          "¾ cup cooked brown rice",
+          "Leftover peppers + onions"
+        ],
+        "sam": [
+          "4 oz chicken",
+          "½ cup cooked brown rice",
+          "Leftover peppers + onions"
+        ],
+        "note": ""
+      },
+      "dinner": {
+        "name": "Salmon burgers + roasted potatoes + green beans",
+        "dusty": [
+          "1 large salmon burger",
+          "Whole-grain bun",
+          "~6 oz roasted baby potatoes",
+          "1½ cups green beans"
+        ],
+        "sam": [
+          "1 smaller salmon burger",
+          "Whole-grain bun",
+          "~4 oz roasted baby potatoes",
+          "1½ cups green beans"
+        ],
+        "note": "Make four burgers; reserve two for Sunday lunch."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-08-16",
+      "breakfast": {
+        "name": "Eggs, sprouted-grain toast & fruit",
+        "dusty": [
+          "2 eggs",
+          "2 slices sprouted-grain toast",
+          "Fruit"
+        ],
+        "sam": [
+          "2 eggs",
+          "1 slice sprouted-grain toast",
+          "Fruit"
+        ],
+        "note": ""
+      },
+      "lunch": {
+        "name": "Leftover salmon burgers",
+        "dusty": [
+          "1 salmon burger",
+          "Whole-grain bun",
+          "Fruit or remaining vegetables"
+        ],
+        "sam": [
+          "1 salmon burger",
+          "Whole-grain bun",
+          "Fruit or remaining vegetables"
+        ],
+        "note": ""
+      },
+      "dinner": {
+        "name": "Takeout",
+        "dusty": [
+          "Mediterranean, sushi, Mexican bowl, or grilled chicken/fish option"
+        ],
+        "sam": [
+          "Mediterranean, sushi, Mexican bowl, or grilled chicken/fish option"
+        ],
+        "note": "Favor vegetables; beans or edamame are good higher-fiber choices."
+      },
+      "dayNotes": []
+    }
+  ],
+  "groceries": [
+    "Ground turkey: 3 lb",
+    "Chicken breast: 2½ lb",
+    "Raw shrimp: 2½ lb",
+    "Salmon: 1½ lb",
+    "Sliced turkey: 7 oz",
+    "Cannellini beans: 2 cans",
+    "Crushed tomatoes: 1 large can",
+    "Marinara sauce: 1 jar",
+    "Whole-wheat spaghetti: 1 box",
+    "Orzo: 1 box",
+    "Brown rice: 3 cups dry",
+    "Whole-grain wraps: 1 package",
+    "Whole-grain burger buns: 4",
+    "Dave’s Killer Bread sprouted-grain bread: 1 loaf",
+    "Broccoli: 3 large crowns",
+    "Carrots: 1 large bag",
+    "Bell peppers: 7",
+    "Zucchini: 2",
+    "Yellow onions: 4",
+    "Fresh spinach: 1 large container",
+    "Cucumbers: 2",
+    "Tomatoes: 3",
+    "Green beans: 1½ lb",
+    "Baby potatoes: 1½ lb",
+    "Blueberries: 12 cups",
+    "Bananas: 6",
+    "Apples: 4",
+    "Additional berries or fruit: 2 containers",
+    "Creamy oat milk: 2 large cartons",
+    "OWYN protein powder: enough for 3 shared smoothie batches",
+    "Ground flaxseed: enough for 3 tsp",
+    "Eggs: 18",
+    "Tzatziki: 1 container",
+    "Hummus: 1 container",
+    "Parmesan: 1 container",
+    "Honey: enough for 6 tbsp"
+  ]
+}
