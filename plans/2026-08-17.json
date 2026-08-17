@@ -1,0 +1,353 @@
+{
+  "id": "2026-08-17",
+  "title": "August 17–23, 2026",
+  "startDate": "2026-08-17",
+  "endDate": "2026-08-23",
+  "updatedAt": "2026-08-16",
+  "days": [
+    {
+      "day": "Monday",
+      "date": "2026-08-17",
+      "breakfast": {
+        "name": "MIND smoothie + eggs",
+        "dusty": [
+          "Full smoothie",
+          "2 eggs"
+        ],
+        "sam": [
+          "¾ smoothie",
+          "1 egg"
+        ]
+      },
+      "lunch": {
+        "name": "Chicken Caesar wraps + fruit",
+        "dusty": [
+          "1 large spinach wrap",
+          "5 oz chicken",
+          "Caesar salad mix",
+          "Apple or berries"
+        ],
+        "sam": [
+          "1 smaller wrap",
+          "3–4 oz chicken",
+          "Caesar salad mix",
+          "Fruit"
+        ],
+        "note": "Easy lunch with Sam’s mom. Cook enough chicken for three adults. Keep dressing moderate."
+      },
+      "dinner": {
+        "name": "Sheet-pan curry chicken, peppers & onions + rice",
+        "dusty": [
+          "6 oz chicken",
+          "~2 cups vegetables",
+          "¾ cup cooked rice"
+        ],
+        "sam": [
+          "4 oz chicken",
+          "~1½ cups vegetables",
+          "½ cup cooked rice"
+        ],
+        "note": "Use frozen chicken and red/green peppers. Make enough for Tuesday lunch."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-08-18",
+      "breakfast": {
+        "name": "Poets",
+        "dusty": [
+          "Usual breakfast",
+          "Prioritize eggs/protein over pastry-heavy options"
+        ],
+        "sam": [
+          "Usual breakfast"
+        ]
+      },
+      "lunch": {
+        "name": "Leftover curry chicken bowls",
+        "dusty": [
+          "5–6 oz chicken",
+          "Vegetables",
+          "½–¾ cup rice"
+        ],
+        "sam": [
+          "3–4 oz chicken",
+          "Vegetables",
+          "½ cup rice"
+        ]
+      },
+      "dinner": {
+        "name": "Spaghetti + turkey meatballs + broccoli",
+        "dusty": [
+          "~2 oz dry pasta equivalent",
+          "5–6 turkey meatballs",
+          "1½ cups broccoli"
+        ],
+        "sam": [
+          "~1.5 oz dry pasta equivalent",
+          "4 turkey meatballs",
+          "1–1½ cups broccoli"
+        ],
+        "note": "Use frozen turkey meatballs. Make extra broccoli and meatballs for Wednesday lunch."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Wednesday",
+      "date": "2026-08-19",
+      "breakfast": {
+        "name": "MIND smoothie + eggs",
+        "dusty": [
+          "Full smoothie",
+          "2 eggs"
+        ],
+        "sam": [
+          "¾ smoothie",
+          "1 egg"
+        ]
+      },
+      "lunch": {
+        "name": "Meatball & broccoli bowls",
+        "dusty": [
+          "5 turkey meatballs",
+          "Broccoli",
+          "½ cup rice"
+        ],
+        "sam": [
+          "4 turkey meatballs",
+          "Broccoli",
+          "½ cup rice"
+        ],
+        "note": "A little marinara works well over the bowl."
+      },
+      "dinner": {
+        "name": "Ground turkey, carrot & spinach rice bowls + chipotle mayo",
+        "dusty": [
+          "6 oz turkey",
+          "¾ cup rice",
+          "Generous carrots and spinach",
+          "~1 tbsp chipotle mayo"
+        ],
+        "sam": [
+          "4 oz turkey",
+          "½ cup rice",
+          "Generous carrots and spinach",
+          "~2 tsp chipotle mayo"
+        ],
+        "note": "Use carrots already in the fridge."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-08-20",
+      "breakfast": {
+        "name": "MIND smoothie + eggs",
+        "dusty": [
+          "Full smoothie",
+          "2 eggs"
+        ],
+        "sam": [
+          "¾ smoothie",
+          "1 egg"
+        ]
+      },
+      "lunch": {
+        "name": "Leftover turkey rice bowls",
+        "dusty": [
+          "5–6 oz turkey",
+          "Vegetables",
+          "½–¾ cup rice"
+        ],
+        "sam": [
+          "3–4 oz turkey",
+          "Vegetables",
+          "½ cup rice"
+        ]
+      },
+      "dinner": {
+        "name": "Salmon burgers + roasted potatoes + green beans",
+        "dusty": [
+          "1 salmon burger",
+          "~6 oz roasted potatoes",
+          "1½–2 cups green beans"
+        ],
+        "sam": [
+          "1 salmon burger",
+          "~4 oz roasted potatoes",
+          "1–1½ cups green beans"
+        ],
+        "note": "Use mustard/pickle-based toppings rather than a heavy sauce."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Friday",
+      "date": "2026-08-21",
+      "breakfast": {
+        "name": "Poets",
+        "dusty": [
+          "Usual breakfast",
+          "Favor a protein-forward option"
+        ],
+        "sam": [
+          "Usual breakfast"
+        ]
+      },
+      "lunch": {
+        "name": "Turkey & avocado sandwiches + vegetables",
+        "dusty": [
+          "Sandwich on multigrain bread",
+          "~4 oz turkey",
+          "Avocado",
+          "Raw carrots/vegetables"
+        ],
+        "sam": [
+          "Sandwich on multigrain bread",
+          "~3 oz turkey",
+          "Avocado",
+          "Vegetables"
+        ]
+      },
+      "dinner": {
+        "name": "Chicken fajitas",
+        "dusty": [
+          "6 oz chicken",
+          "Lots of peppers/onions",
+          "2 medium tortillas"
+        ],
+        "sam": [
+          "4 oz chicken",
+          "Peppers/onions",
+          "1–2 small tortillas"
+        ],
+        "note": "Use more frozen chicken and any remaining peppers. Salsa, lettuce, and a small amount of cheese/sour cream as toppings."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-08-22",
+      "breakfast": {
+        "name": "Pancakes",
+        "dusty": [
+          "2 medium pancakes",
+          "2 eggs",
+          "Berries"
+        ],
+        "sam": [
+          "2 smaller pancakes",
+          "1 egg",
+          "Berries"
+        ],
+        "note": "Keep syrup reasonable; adding eggs keeps breakfast more filling."
+      },
+      "lunch": {
+        "name": "Eating out",
+        "dusty": [
+          "Planned meal out"
+        ],
+        "sam": [
+          "Planned meal out"
+        ],
+        "note": "No meal prep planned."
+      },
+      "dinner": {
+        "name": "Cajun shrimp & rice + roasted carrots",
+        "dusty": [
+          "6 oz shrimp",
+          "¾ cup rice",
+          "1½ cups vegetables"
+        ],
+        "sam": [
+          "4 oz shrimp",
+          "½ cup rice",
+          "1–1½ cups vegetables"
+        ],
+        "note": "Use remaining carrots if available."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-08-23",
+      "breakfast": {
+        "name": "Eggs, multigrain toast + fruit",
+        "dusty": [
+          "2 eggs",
+          "2 slices toast",
+          "Fruit"
+        ],
+        "sam": [
+          "2 eggs",
+          "1 slice toast",
+          "Fruit"
+        ]
+      },
+      "lunch": {
+        "name": "Leftover clean-out",
+        "dusty": [
+          "Remaining protein + vegetables",
+          "~½ cup rice or potatoes if needed"
+        ],
+        "sam": [
+          "Smaller portion of remaining protein + vegetables",
+          "Small rice or potato portion if needed"
+        ],
+        "note": "Priority is using remaining shrimp, fajita chicken, vegetables, and rice before opening anything new."
+      },
+      "dinner": {
+        "name": "Takeout",
+        "dusty": [
+          "Mediterranean bowl: grilled chicken, rice, vegetables, tzatziki",
+          "Mexican: fajitas or burrito bowl",
+          "Sushi: rolls + edamame; avoid sesame",
+          "Pizza: pair with a salad and keep portions reasonable"
+        ],
+        "sam": [
+          "Mediterranean bowl: grilled chicken, rice, vegetables, tzatziki",
+          "Mexican: fajitas or burrito bowl",
+          "Sushi: rolls + edamame; avoid sesame",
+          "Pizza: pair with a salad and keep portions reasonable"
+        ],
+        "note": "Avoid sesame due to Grace’s allergy."
+      },
+      "dayNotes": []
+    }
+  ],
+  "groceries": [
+    "Spinach tortillas: 1 package",
+    "Caesar salad kit: 1 large bag",
+    "Apples or berries for Monday lunch: enough for 3 adults",
+    "Bananas: 4",
+    "Blueberries: 2 pints or 1 large frozen bag",
+    "Baby spinach: 1 large container",
+    "Oat milk: 1 carton",
+    "OWYN protein shakes: 3–6 depending on smoothie stock",
+    "Ground flaxseed: 1 bag if needed",
+    "Eggs: 18",
+    "Rice: about 3 cups dry",
+    "Broccoli: 2 large heads or 2 bags florets",
+    "Spaghetti: 1 box",
+    "Marinara sauce: 1 jar",
+    "Ground turkey: 1½ lb",
+    "Chipotle mayo: 1 bottle if needed",
+    "Salmon burgers: 2–4 depending on kids",
+    "Baby potatoes: 1½ lb",
+    "Green beans: 1 lb",
+    "Deli turkey: ¾ lb",
+    "Avocados: 2",
+    "Multigrain bread: 1 loaf",
+    "Onions: 3",
+    "Fajita-size tortillas: 1 package",
+    "Lettuce: 1 small head or bag",
+    "Salsa: 1 jar",
+    "Shredded cheese: 1 small bag",
+    "Shrimp: 1 lb",
+    "Pancake mix: enough for Saturday breakfast",
+    "Maple syrup: 1 bottle if needed",
+    "Fresh berries: 1–2 pints",
+    "Fruit for breakfasts/lunches: 6–8 servings"
+  ]
+}
