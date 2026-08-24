@@ -1,0 +1,196 @@
+{
+  "id": "2026-08-24",
+  "title": "August 24–30, 2026",
+  "startDate": "2026-08-24",
+  "endDate": "2026-08-30",
+  "updatedAt": "2026-08-23",
+  "days": [
+    {
+      "day": "Monday",
+      "date": "2026-08-24",
+      "breakfast": {
+        "name": "MIND smoothie + eggs",
+        "dusty": ["½ MIND smoothie batch", "2 eggs"],
+        "sam": ["½ MIND smoothie batch", "1 egg"]
+      },
+      "lunch": {
+        "name": "Tuna & cannellini salad",
+        "dusty": ["5 oz tuna", "½ cup cannellini beans", "3 cups greens, tomato and cucumber", "1 oz feta", "Light vinaigrette", "1 slice whole-grain toast"],
+        "sam": ["4 oz tuna", "⅓ cup cannellini beans", "2 cups greens, tomato and cucumber", "½ oz feta", "Light vinaigrette", "1 slice whole-grain toast"]
+      },
+      "dinner": {
+        "name": "Salmon, roasted potatoes & broccoli",
+        "dusty": ["7 oz salmon", "8 oz roasted potatoes", "2 cups broccoli"],
+        "sam": ["5 oz salmon", "5 oz roasted potatoes", "1½ cups broccoli"],
+        "note": "Cook only what is needed for dinner. No salmon leftovers."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-08-25",
+      "breakfast": {
+        "name": "Poet’s",
+        "dusty": ["Usual protein-forward breakfast"],
+        "sam": ["Usual breakfast"],
+        "note": "Dusty leaves after breakfast."
+      },
+      "lunch": {
+        "name": "Sam’s cannellini, tomato, carrot & orzo bowl",
+        "dusty": ["Traveling"],
+        "sam": ["½ cup cannellini beans", "½ cup cooked orzo", "Generous carrots", "½–¾ cup crushed tomatoes", "Garlic", "1 tsp Parmesan if wanted"],
+        "note": "Make two Sam portions so Wednesday lunch is already handled."
+      },
+      "dinner": {
+        "name": "Spaghetti, turkey meatballs & broccoli",
+        "dusty": ["Traveling"],
+        "sam": ["¾ cup cooked spaghetti", "3–4 turkey meatballs, about 4 oz", "½ cup marinara", "1–1½ cups broccoli", "2 tsp Parmesan"],
+        "note": "Single-serving pasta night. No need to make leftovers."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Wednesday",
+      "date": "2026-08-26",
+      "breakfast": {
+        "name": "MIND smoothie + egg",
+        "dusty": ["Traveling"],
+        "sam": ["½ MIND smoothie batch", "1 egg"],
+        "note": "Make a half-size smoothie batch since Dusty is gone."
+      },
+      "lunch": {
+        "name": "Cannellini, tomato, carrot & orzo leftovers",
+        "dusty": ["Traveling"],
+        "sam": ["½ cup cannellini beans", "½ cup cooked orzo", "Carrots", "Crushed tomatoes"]
+      },
+      "dinner": {
+        "name": "Ground turkey, carrot & spinach rice bowl",
+        "dusty": ["Traveling"],
+        "sam": ["4 oz ground turkey", "½ cup cooked rice", "1½ cups carrots and spinach", "1 tbsp chipotle mayo"],
+        "note": "Make two Sam portions. The second becomes Thursday lunch."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-08-27",
+      "breakfast": {
+        "name": "MIND smoothie + egg",
+        "dusty": ["Traveling"],
+        "sam": ["½ MIND smoothie batch", "1 egg"]
+      },
+      "lunch": {
+        "name": "Leftover turkey rice bowl",
+        "dusty": ["Traveling"],
+        "sam": ["4 oz ground turkey", "½ cup cooked rice", "1½ cups carrots and spinach", "1 tbsp chipotle mayo"]
+      },
+      "dinner": {
+        "name": "Cajun shrimp & rice",
+        "dusty": ["7 oz shrimp", "¾ cup cooked rice", "2 cups broccoli and bell pepper", "1 tbsp finishing butter/sauce"],
+        "sam": ["5 oz shrimp", "½ cup cooked rice", "1½ cups broccoli and bell pepper", "2 tsp finishing butter/sauce"],
+        "note": "Dusty is back for dinner. Use the frozen shrimp and broccoli. No need to make extra."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Friday",
+      "date": "2026-08-28",
+      "breakfast": {
+        "name": "Poet’s",
+        "dusty": ["Usual protein-forward breakfast"],
+        "sam": ["Usual breakfast"]
+      },
+      "lunch": {
+        "name": "Turkey & avocado sandwiches",
+        "dusty": ["2 slices whole-grain bread", "5 oz deli turkey", "¼ avocado", "Spinach/tomato", "Fruit"],
+        "sam": ["1–2 slices whole-grain bread", "3–4 oz deli turkey", "¼ avocado", "Spinach/tomato", "Fruit"]
+      },
+      "dinner": {
+        "name": "Korean BBQ beef, baked potatoes & slaw",
+        "dusty": ["7 oz lean beef", "8 oz baked potato", "2 cups slaw", "2 tbsp Korean BBQ sauce", "1 tbsp light slaw dressing"],
+        "sam": ["5 oz lean beef", "5 oz baked potato", "1½ cups slaw", "1 tbsp Korean BBQ sauce", "1 tbsp light slaw dressing"],
+        "note": "Make enough beef and slaw for Saturday lunch. Use a sesame-free Korean BBQ sauce for the family meal."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-08-29",
+      "breakfast": {
+        "name": "Pancakes",
+        "dusty": ["2 medium pancakes", "2 eggs", "Berries", "Moderate syrup"],
+        "sam": ["2 smaller pancakes", "1 egg", "Berries", "Moderate syrup"]
+      },
+      "lunch": {
+        "name": "Korean beef bowls",
+        "dusty": ["6 oz leftover beef", "¾ cup cooked rice", "1½ cups slaw", "Small amount of extra sauce"],
+        "sam": ["4 oz leftover beef", "½ cup cooked rice", "1½ cups slaw", "Small amount of extra sauce"]
+      },
+      "dinner": {
+        "name": "Chicken fajitas + black beans",
+        "dusty": ["7 oz chicken", "2 small tortillas", "2 cups peppers and onions", "⅓ cup black beans", "¼ cup shredded cheese", "Salsa"],
+        "sam": ["5 oz chicken", "1 small tortilla", "1½ cups peppers and onions", "¼ cup black beans", "2 tbsp shredded cheese", "Salsa"],
+        "note": "Make extra chicken and vegetables for Sunday lunch."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-08-30",
+      "breakfast": {
+        "name": "Eggs, toast & berries",
+        "dusty": ["3 eggs", "2 slices whole-grain toast", "Berries"],
+        "sam": ["2 eggs", "1 slice whole-grain toast", "Berries"]
+      },
+      "lunch": {
+        "name": "Chicken Caesar wraps",
+        "dusty": ["6 oz leftover chicken", "1 large spinach tortilla", "2 cups romaine", "2 tbsp Caesar dressing", "1 tbsp Parmesan"],
+        "sam": ["4 oz leftover chicken", "1 small tortilla", "1½ cups romaine", "1 tbsp Caesar dressing", "2 tsp Parmesan"]
+      },
+      "dinner": {
+        "name": "Takeout",
+        "dusty": ["Mexican fajitas or burrito bowl", "Mediterranean grilled protein + rice + vegetables", "Grilled chicken plate or sandwich", "Pizza + substantial salad"],
+        "sam": ["Mexican fajitas or burrito bowl", "Mediterranean grilled protein + rice + vegetables", "Grilled chicken plate or sandwich", "Pizza + substantial salad"],
+        "note": "Keep the normal allergy verification for anything the kids will eat."
+      },
+      "dayNotes": []
+    }
+  ],
+  "groceries": [
+    "Blueberries: 4 cups",
+    "Bananas: 2",
+    "Creamy oat milk: 5 cups",
+    "OWYN protein powder: 3 scoops",
+    "Ground flaxseed: 2 tsp",
+    "Eggs: 1 dozen",
+    "Mixed greens: 1 large container",
+    "Tomatoes: 4 medium",
+    "Cucumber: 1",
+    "Feta: 4 oz",
+    "Whole-grain bread: 1 loaf",
+    "Potatoes: about 2½ lb",
+    "Carrots: 1 lb",
+    "Orzo: 1 small box",
+    "Crushed tomatoes: 1 can",
+    "Spaghetti: 1 small box",
+    "Marinara sauce: 1 jar",
+    "Parmesan: 1 small container",
+    "Rice: about 2½ cups dry",
+    "Chipotle mayo: 1 small bottle",
+    "Bell peppers: 5",
+    "Deli turkey: about 12 oz",
+    "Avocados: 1–2",
+    "Lean beef roast or stew meat: about 2½ lb",
+    "Coleslaw mix: 2 bags",
+    "Sesame-free Korean BBQ sauce: 1 bottle",
+    "Chicken breasts: about 2½ lb",
+    "Small tortillas: 1 package",
+    "Shredded cheese: 1 8 oz bag",
+    "Salsa: 1 jar",
+    "Spinach tortillas: 1 package",
+    "Romaine or Caesar salad kit: 1 large bag",
+    "Pancake mix: enough for Saturday",
+    "Maple syrup: 1 bottle if needed",
+    "Fresh fruit for lunches: 4 servings"
+  ]
+}
