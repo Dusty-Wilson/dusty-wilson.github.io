@@ -5,13 +5,13 @@ const path = require('node:path');
 
 const DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 const NUTRITION_FIELDS = ['calories', 'protein', 'carbohydrates', 'fat', 'fiber', 'sodium'];
-const PROHIBITED_PATTERNS = [
-  [/\bpeanuts?\b/i, 'peanut'],
-  [/\b(?:almonds?|cashews?|walnuts?|pecans?|pistachios?|hazelnuts?|macadamias?|brazil nuts?|tree nuts?)\b/i, 'tree nut'],
-  [/\bsesame\b|\btahini\b/i, 'sesame'],
-  [/\bcoconut\b/i, 'coconut'],
-  [/\bgreen beans?\b/i, 'green beans']
-];
+const EXCLUSION_PATTERNS = {
+  peanuts: /\b(?:peanuts?|peanut\s+(?:butter|oil|flour|powder)|groundnuts?|arachis(?:\s+oil)?|goober(?:\s+peas?)?)\b/gi,
+  'tree nuts': /\b(?:tree\s+nuts?|almonds?|marzipan|cashews?|walnuts?|pecans?|pistachios?|hazelnuts?|filberts?|macadamias?|brazil\s+nuts?|pine\s+nuts?|pignoli|chestnuts?|nutella|gianduja)\b/gi,
+  sesame: /\b(?:sesame(?:\s+(?:seed|oil|paste))?|tahini|benne|gingelly|halvah?|til)\b/gi,
+  coconut: /\b(?:coconuts?|coconut\s+(?:milk|cream|oil|flour|water|sugar|aminos)|copra)\b/gi
+};
+const PLANNING_EXCLUSIONS = { ...EXCLUSION_PATTERNS, 'green beans': /\bgreen\s+beans?\b/gi };
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -70,6 +70,37 @@ function collectPlanText(plan) {
   return values.filter(value => typeof value === 'string');
 }
 
+function isNegatedMatch(text, start, matched) {
+  const before = text.slice(Math.max(0, start - 32), start).toLowerCase();
+  const after = text.slice(start + matched.length, start + matched.length + 8).toLowerCase();
+  return /(?:no|without|avoid|avoiding|exclude|excluding|omit|omitting|never use|do not use)\s+(?:any\s+)?$/.test(before) || /^\s*[- ]?free\b/.test(after);
+}
+
+function findExcludedIngredients(text, excludedIngredients, includePlanningRules = false) {
+  if (typeof text !== 'string') return [];
+  const patterns = includePlanningRules ? PLANNING_EXCLUSIONS : EXCLUSION_PATTERNS;
+  const names = includePlanningRules ? [...excludedIngredients, 'green beans'] : excludedIngredients;
+  const matches = [];
+  for (const name of names) {
+    const pattern = patterns[name];
+    if (!pattern) continue;
+    pattern.lastIndex = 0;
+    let match;
+    while ((match = pattern.exec(text)) !== null) {
+      if (!isNegatedMatch(text, match.index, match[0])) matches.push({ group: name, term: match[0] });
+      if (match.index === pattern.lastIndex) pattern.lastIndex += 1;
+    }
+  }
+  return matches;
+}
+
+function recipeIngredientText(recipe) {
+  const values = [];
+  for (const ingredient of recipe.ingredients || []) values.push(ingredient.name, ingredient.preparation, ...(ingredient.substitutions || []));
+  values.push(...(recipe.planning?.groceryIngredients || []));
+  return values.filter(value => typeof value === 'string');
+}
+
 function validatePlan(plan, options = {}) {
   const errors = [];
   const warnings = [];
@@ -99,34 +130,34 @@ function validatePlan(plan, options = {}) {
   });
   if (!Array.isArray(plan.groceries) || plan.groceries.some(item => typeof item !== 'string' || !item.trim())) errors.push({ code: 'groceries', path: 'groceries', message: 'groceries must be a flat array of non-empty strings.' });
 
-  if (options.enforceSafety) {
-    for (const value of collectPlanText(plan)) for (const [pattern, label] of PROHIBITED_PATTERNS) if (pattern.test(value)) errors.push({ code: 'prohibited-ingredient', path: 'plan', message: `Prohibited ingredient reference (${label}): ${value}` });
-    if (plan.allergenReview?.status !== 'verified' || plan.allergenReview?.packagedIngredientsReviewed !== true) errors.push({ code: 'allergen-review', path: 'allergenReview', message: 'New plans require verified allergen review, including packaged ingredients.' });
+  if (options.enforceExclusions) {
+    for (const value of collectPlanText(plan)) for (const match of findExcludedIngredients(value, options.excludedIngredients || [], true)) errors.push({ code: 'excluded-ingredient', path: 'plan', message: `Excluded ingredient (${match.group}, matched "${match.term}"): ${value}` });
   } else {
     const matches = new Set();
-    for (const value of collectPlanText(plan)) for (const [pattern, label] of PROHIBITED_PATTERNS) if (pattern.test(value)) matches.add(label);
+    for (const value of collectPlanText(plan)) for (const match of findExcludedIngredients(value, options.excludedIngredients || [], true)) matches.add(match.group);
     if (matches.size) warnings.push({ code: 'legacy-rule-conflict', path: 'plan', message: `Historical plan contains current-rule conflicts: ${[...matches].join(', ')}.` });
   }
   return { valid: errors.length === 0, errors, warnings };
 }
 
-function validateRecipe(recipe) {
+function validateRecipe(recipe, options = {}) {
   const errors = [];
-  for (const key of ['id', 'name', 'description', 'category', 'tags', 'rotationStatus', 'favorite', 'ingredients', 'preparation', 'servings', 'nutritionPerServing', 'planning', 'householdAllergyVerification']) if (!(key in (recipe || {}))) errors.push({ code: 'missing-field', path: key, message: `Missing required field: ${key}` });
+  for (const key of ['id', 'name', 'description', 'category', 'tags', 'rotationStatus', 'favorite', 'ingredients', 'preparation', 'servings', 'planning']) if (!(key in (recipe || {}))) errors.push({ code: 'missing-field', path: key, message: `Missing required field: ${key}` });
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(recipe?.id || '')) errors.push({ code: 'recipe-id', path: 'id', message: 'Recipe id must be a stable kebab-case id.' });
   if (!Array.isArray(recipe?.ingredients) || !recipe.ingredients.length) errors.push({ code: 'ingredients', path: 'ingredients', message: 'Recipe needs at least one ingredient.' });
   else recipe.ingredients.forEach((ingredient, index) => {
-    if (!ingredient.name || !('quantity' in ingredient) || !('unit' in ingredient) || !Array.isArray(ingredient.allergens) || !ingredient.verification) errors.push({ code: 'ingredient-shape', path: `ingredients[${index}]`, message: 'Ingredient requires name, nullable quantity/unit, allergens, and verification.' });
+    if (!ingredient.name || !('quantity' in ingredient) || !('unit' in ingredient) || !Array.isArray(ingredient.substitutions)) errors.push({ code: 'ingredient-shape', path: `ingredients[${index}]`, message: 'Ingredient requires name, nullable quantity/unit, and substitutions.' });
   });
   const prep = recipe?.preparation;
   if (!prep || !Array.isArray(prep.instructions) || !prep.instructions.length || !('prepMinutes' in prep) || !('cookMinutes' in prep) || !Array.isArray(prep.methods) || !Array.isArray(prep.equipment)) errors.push({ code: 'preparation', path: 'preparation', message: 'Preparation metadata is incomplete.' });
   const nutrition = recipe?.nutritionPerServing;
-  if (!nutrition || !['verified', 'estimated', 'unknown'].includes(nutrition.status)) errors.push({ code: 'nutrition-status', path: 'nutritionPerServing.status', message: 'Nutrition status must be verified, estimated, or unknown.' });
-  else {
+  if (nutrition !== undefined && nutrition !== null && !['verified', 'estimated', 'unknown'].includes(nutrition.status)) errors.push({ code: 'nutrition-status', path: 'nutritionPerServing.status', message: 'Nutrition status must be verified, estimated, or unknown.' });
+  else if (nutrition) {
+    if (!('servingSize' in nutrition) || (nutrition.servingSize !== null && typeof nutrition.servingSize !== 'string')) errors.push({ code: 'nutrition-serving-size', path: 'nutritionPerServing.servingSize', message: 'Nutrition servingSize must be a string or null.' });
     for (const field of NUTRITION_FIELDS) if (!(field in nutrition) || (nutrition[field] !== null && typeof nutrition[field] !== 'number')) errors.push({ code: 'nutrition-value', path: `nutritionPerServing.${field}`, message: 'Nutrition fields must be numbers or null.' });
     if (nutrition.status === 'unknown' && NUTRITION_FIELDS.some(field => nutrition[field] !== null)) errors.push({ code: 'unknown-nutrition', path: 'nutritionPerServing', message: 'Unknown nutrition values must be null.' });
   }
-  if (!['verified', 'unverified'].includes(recipe?.householdAllergyVerification?.status)) errors.push({ code: 'allergy-status', path: 'householdAllergyVerification.status', message: 'Allergy status must be verified or unverified.' });
+  for (const value of recipeIngredientText(recipe)) for (const match of findExcludedIngredients(value, options.excludedIngredients || [], true)) errors.push({ code: 'excluded-ingredient', path: 'ingredients', message: `Excluded ingredient (${match.group}, matched "${match.term}"): ${value}` });
   return { valid: errors.length === 0, errors, warnings: [] };
 }
 
@@ -151,13 +182,16 @@ function recipeMap(root) {
   return new Map(index.recipes.map(meta => [meta.id, readJson(path.join(root, 'recipes', meta.file))]));
 }
 
-function validateRecipeReferences(plan, recipes, enforceSafety) {
+function validateRecipeReferences(plan, recipes, options = {}) {
   const errors = [];
   for (const day of plan.days || []) for (const mealName of ['breakfast', 'lunch', 'dinner']) {
     const id = day[mealName]?.recipeId;
     if (!id) continue;
     if (!recipes.has(id)) errors.push({ code: 'unknown-recipe', path: `${day.date}.${mealName}`, message: `Unknown recipe reference: ${id}` });
-    else if (enforceSafety && recipes.get(id).householdAllergyVerification.status !== 'verified') errors.push({ code: 'unverified-recipe', path: `${day.date}.${mealName}`, message: `Recipe ${id} is not verified for household allergens.` });
+    else {
+      const result = validateRecipe(recipes.get(id), { excludedIngredients: options.excludedIngredients || [] });
+      for (const item of result.errors) errors.push({ code: 'invalid-recipe-reference', path: `${day.date}.${mealName}`, message: `Referenced recipe ${id} is invalid: ${item.message}` });
+    }
   }
   return errors;
 }
@@ -166,8 +200,9 @@ function publishPlan(root, sourceFile, options = {}) {
   const plan = readJson(sourceFile);
   const indexFile = path.join(root, 'plans', 'index.json');
   const index = readJson(indexFile);
-  const result = validatePlan(plan, { expectedId: plan.id, enforceSafety: true });
-  result.errors.push(...validateRecipeReferences(plan, recipeMap(root), true));
+  const household = readJson(path.join(root, 'config', 'household.json'));
+  const result = validatePlan(plan, { expectedId: plan.id, enforceExclusions: true, excludedIngredients: household.excludedIngredients });
+  result.errors.push(...validateRecipeReferences(plan, recipeMap(root), { excludedIngredients: household.excludedIngredients }));
   const destination = path.join(root, 'plans', `${plan.id}.json`);
   if (fs.existsSync(destination) || index.plans.some(meta => meta.id === plan.id)) result.errors.push({ code: 'duplicate-plan', path: plan.id, message: 'A plan for this week already exists; it will not be overwritten.' });
   if (result.errors.length) {
@@ -184,4 +219,4 @@ function publishPlan(root, sourceFile, options = {}) {
   return { published: !options.dryRun, planId: plan.id, destination, index: nextIndex };
 }
 
-module.exports = { DAYS, PROHIBITED_PATTERNS, addDays, mondayFor, publishPlan, readJson, recipeMap, titleForWeek, validateIndex, validatePlan, validateRecipe, validateRecipeReferences, writeJson };
+module.exports = { DAYS, EXCLUSION_PATTERNS, addDays, findExcludedIngredients, mondayFor, publishPlan, readJson, recipeMap, titleForWeek, validateIndex, validatePlan, validateRecipe, validateRecipeReferences, writeJson };

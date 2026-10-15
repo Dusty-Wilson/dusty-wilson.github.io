@@ -6,11 +6,7 @@
   ],
   "dietaryPatterns": ["Mediterranean", "MIND"],
   "priorities": ["protein", "vegetables", "fiber", "reasonable calories", "simple weekday preparation"],
-  "allergens": {
-    "severity": "severe-cannot-be-in-house",
-    "prohibited": ["peanut", "tree nuts", "sesame", "coconut"],
-    "manufacturerStatusRule": "Packaged ingredients are unverified until their current label and cross-contact statement are reviewed."
-  },
+  "excludedIngredients": ["peanuts", "tree nuts", "sesame", "coconut"],
   "neverUse": ["green beans", "leftover cooked rice"],
   "breakfastDefaults": {
     "Monday": "MIND smoothie; Dusty may add two eggs",

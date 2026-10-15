@@ -7,7 +7,7 @@ A static, installable GitHub Pages meal planner backed by version-controlled wee
 - `plans/index.json` is the published-plan manifest; `latest` must name its newest entry.
 - `plans/YYYY-MM-DD.json` holds immutable Monday–Sunday plans.
 - `recipes/index.json` and one JSON file per recipe form the recipe catalog.
-- `config/household.json` contains machine-readable household defaults and safety rules.
+- `config/household.json` contains machine-readable household defaults and planning constraints.
 - `config/planning-rules.md` contains the concise planning policy used in chat and scheduled generation.
 - `scripts/` contains shared validation, publishing, and AI-generation code.
 - `.github/workflows/weekly-meal-plan.yml` runs the unattended publisher.
@@ -22,7 +22,7 @@ The obsolete root-level `index.json` was not referenced by the HTML, app, servic
 
 Normal app launches now use `plans/index.json#latest`; the old `selectedPlan` local-storage value no longer pins a normal launch to an archived week. An explicit `?week=` URL still opens that archive, the selector still navigates history, and Refresh reloads the index without cache and opens the latest published plan. The service-worker cache version was bumped so updated application code reaches installed PWAs while offline shell behavior remains available.
 
-Historical plans predate the current restrictions and include some now-prohibited meal text. They remain immutable. Repository validation reports those conflicts as legacy warnings, while every newly published plan uses fail-closed safety validation.
+Historical plans predate the current restrictions and include some now-excluded meal text. They remain immutable. Repository validation reports intentional conflicts as legacy warnings, while every newly published plan uses deterministic ingredient-exclusion validation.
 
 ## Initial configuration
 
@@ -30,8 +30,7 @@ Historical plans predate the current restrictions and include some now-prohibite
 2. In **Settings → Actions → General**, allow Actions to run and give workflows read/write repository permission. The workflow itself requests only `contents: write`.
 3. Add an Actions secret named `OPENAI_API_KEY`. Never place it in repository files or browser JavaScript.
 4. Optionally add an Actions variable named `OPENAI_MODEL`. The default is `gpt-5.4-mini`.
-5. Review each recipe's ingredient brands and cross-contact labels. Change `householdAllergyVerification.status` to `verified` only after the current packaged ingredients have actually been checked. Seeded recipes intentionally remain unverified where details are missing.
-6. Protect `main` as desired, but allow the scheduled workflow's GitHub token to push if automatic publication should work. If branch protection requires pull requests, use a dedicated automation exception or change the workflow to open a PR.
+5. Protect `main` as desired, but allow the scheduled workflow's GitHub token to push if automatic publication should work. If branch protection requires pull requests, use a dedicated automation exception or change the workflow to open a PR.
 
 The public repository necessarily exposes the household preferences stored here. Keep private facts out of `config/` and recipes.
 
@@ -47,7 +46,7 @@ The required agent procedure is in `AGENTS.md`:
 
 The publishing step works only when the ChatGPT/Codex environment has a GitHub connection with write access to this repository. Repository instructions do not create that connection. A local session can alternatively use an authenticated Git credential or GitHub CLI. Always report the actual commit/push result; never describe a draft as published.
 
-New plans require an `allergenReview` object with `status: "verified"` and `packagedIngredientsReviewed: true`. That assertion represents a real review—it is not permission to guess.
+The four ingredient groups in `config/household.json#excludedIngredients` are planning exclusions, not medical-safety or product-certification claims. The household independently handles product labels, cross-contact concerns, and substitutions.
 
 ## Automatic Monday workflow
 
@@ -58,16 +57,16 @@ The job:
 1. Validates the repository.
 2. Resolves the current Central-time Monday (or a manually supplied Monday).
 3. Exits successfully without changes if that indexed file already exists and is valid.
-4. Sends household rules, only allergy-verified recipes, and four recent plans to the OpenAI Responses API.
+4. Sends household rules, all 22 managed recipes, and four recent plans to the OpenAI Responses API. It has no Google Sheets dependency.
 5. Retries transient generation failures up to three times.
-6. Runs the same schema, date, recipe-reference, index, and allergy checks used by manual publishing.
+6. Runs the same schema, date, recipe-reference, index, and deterministic ingredient-exclusion checks used by manual publishing.
 7. Writes and commits only the new plan and updated plan index.
 
-Malformed output, incomplete meals, a duplicate/partial week, a prohibited ingredient, an unverified referenced recipe, or missing package review causes a nonzero exit without changing the repository. Recipes and historical plans are never changed by this workflow.
+Malformed output, incomplete meals, a duplicate/partial week, an unknown recipe reference, or an explicitly excluded ingredient causes a nonzero exit without changing the repository. Missing nutrition, quantities, brand information, or manufacturer verification do not block a managed recipe. Recipes and historical plans are never changed by this workflow.
 
 To rerun, open **Actions → Weekly meal plan → Run workflow**. Leave `target_week` blank for the current Central-time week or enter a Monday as `YYYY-MM-DD`.
 
-Troubleshooting starts in the failed workflow log. Common causes are a missing/expired `OPENAI_API_KEY`, unavailable model name, unverified recipe/package data, invalid AI JSON, branch protection blocking the bot push, or a partial plan/index state that requires human repair.
+Troubleshooting starts in the failed workflow log. Common causes are a missing/expired `OPENAI_API_KEY`, unavailable model name, invalid AI JSON, an excluded ingredient, branch protection blocking the bot push, or a partial plan/index state that requires human repair.
 
 ### API use and cost
 
@@ -75,7 +74,7 @@ The scheduled job makes no paid call when a valid week already exists and normal
 
 ## Recipe management
 
-Each recipe contains identity, tags/rotation metadata, ingredients and substitutions, allergen facts and verification state, preparation, equipment, yield/portion guidance, planning/storage metadata, and nutrition.
+The GitHub `recipes/` directory is the authoritative managed catalog used for interactive and scheduled weekly planning. It contains only recipes explicitly approved for regular rotation. Each recipe supports identity, tags/rotation metadata, structured ingredients and substitutions, preparation, equipment, yield/portion guidance, planning/storage metadata, and optional nutrition. Nutrition objects retain serving size, calories, protein, carbohydrates, fat, fiber, sodium, calculation status, and source/assumptions when known.
 
 Nutrition status is one of:
 
@@ -83,7 +82,9 @@ Nutrition status is one of:
 - `estimated`: calculated from documented assumptions.
 - `unknown`: insufficient information; all nutrient values must be `null`, never zero.
 
-To add or modify a recipe, prepare the recipe file and `recipes/index.json` entry in chat, wait for explicit approval, run validation, then commit. Unknown quantities and manufacturer safety stay unverified.
+The separate Google Sheets meal and recipe log remains the comprehensive history for meals tried, repeats, calories, and macros. A logged recipe is not automatically managed, and this repository has no Sheets API, authentication, synchronization, or automatic promotion.
+
+To promote a logged recipe into regular rotation, ChatGPT retrieves it from the Sheet in the interactive conversation, preserves known ingredients, instructions, quantities, and nutrition, leaves unknown values `null`, checks structured ingredients against the household exclusions, presents the proposed JSON for approval, and only then adds the recipe file and manifest entry to GitHub. Recipe frequency never triggers promotion automatically.
 
 ## Validation and local commands
 
@@ -96,7 +97,7 @@ node scripts/publish-plan.js path/to/approved-plan.json --dry-run
 node scripts/generate-weekly-plan.js --week 2026-09-07 --dry-run
 ```
 
-`npm run validate` checks every indexed historical file, every recipe, both manifests, consecutive Monday–Sunday dates, meal/portion completeness, nutrition types, filenames, missing files, and duplicates. New-plan publication adds strict allergy and package-review checks. Tests use mocked AI JSON and never make a paid request.
+`npm run validate` checks every indexed historical file, all managed recipes, both manifests, structured recipe ingredients, consecutive Monday–Sunday dates, meal/portion completeness, optional nutrition types, filenames, missing files, duplicates, and excluded ingredients. Tests use mocked AI JSON and never make a paid request.
 
 ## Weekly plan shape
 
@@ -117,20 +118,15 @@ node scripts/generate-weekly-plan.js --week 2026-09-07 --dry-run
       "dayNotes": []
     }
   ],
-  "groceries": ["plain text line"],
-  "allergenReview": {
-    "status": "verified",
-    "packagedIngredientsReviewed": true,
-    "notes": ["What was actually checked"]
-  }
+  "groceries": ["plain text line"]
 }
 ```
 
-Meals may include a `recipeId` and `note`. When supplied, `recipeId` must exist; strict publication also requires that recipe's household allergy status to be verified.
+Meals may include a `recipeId` and `note`. When supplied, `recipeId` must exist. Automatically generated home-cooked dinners must reference a managed recipe; external meals such as takeout may use `null`.
 
 ## Current limitations
 
 - ChatGPT cannot push merely because `AGENTS.md` describes the process; its environment needs a real authorized GitHub connection.
-- The initial catalog preserves incomplete household knowledge. Those entries cannot be used by the unattended publisher until their brands/labels and full ingredients are reviewed.
-- Deterministic checks catch known prohibited terms and unverified references, but cannot inspect a manufacturer's changing physical label. Human package review remains necessary.
+- Ingredient matching recognizes common names and derivatives in structured recipe ingredients and intentional plan/shopping-list content, but this remains a planning constraint rather than a medical guarantee.
+- Google Sheets retrieval is available only to an interactive ChatGPT conversation with that connection; scheduled generation intentionally uses only the GitHub managed catalog.
 - Scheduled workflows run from the default branch and may be delayed by GitHub Actions; public-repository schedules can also be disabled after prolonged repository inactivity.

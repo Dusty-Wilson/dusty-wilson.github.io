@@ -3,11 +3,14 @@
 
 const fs = require('node:fs');
 const path = require('node:path');
-const { readJson, recipeMap, validateIndex, validatePlan, validateRecipe, validateRecipeReferences } = require('./lib/meal-plan-core');
+const { EXCLUSION_PATTERNS, readJson, recipeMap, validateIndex, validatePlan, validateRecipe, validateRecipeReferences } = require('./lib/meal-plan-core');
 
 function validateRepository(root = path.resolve(__dirname, '..')) {
   const errors = [];
   const warnings = [];
+  const household = readJson(path.join(root, 'config', 'household.json'));
+  if (!Array.isArray(household.excludedIngredients) || !household.excludedIngredients.length) errors.push({ code: 'excluded-ingredients', path: 'config/household.json', message: 'excludedIngredients must be a non-empty array.' });
+  else for (const name of household.excludedIngredients) if (!EXCLUSION_PATTERNS[name]) errors.push({ code: 'unsupported-exclusion', path: 'config/household.json', message: `No deterministic matcher is defined for ${name}.` });
   const index = readJson(path.join(root, 'plans', 'index.json'));
   const indexResult = validateIndex(index, root);
   errors.push(...indexResult.errors);
@@ -25,7 +28,7 @@ function validateRepository(root = path.resolve(__dirname, '..')) {
     const recipe = recipes.get(meta.id);
     if (!recipe || meta.file !== `${meta.id}.json`) errors.push({ code: 'recipe-manifest', path: meta.id, message: 'Recipe manifest id/file mismatch.' });
     else {
-      const result = validateRecipe(recipe);
+      const result = validateRecipe(recipe, { excludedIngredients: household.excludedIngredients || [] });
       errors.push(...result.errors.map(item => ({ ...item, path: `${meta.file}:${item.path}` })));
     }
   }
@@ -34,11 +37,11 @@ function validateRepository(root = path.resolve(__dirname, '..')) {
     const file = path.join(root, 'plans', meta.file);
     if (!fs.existsSync(file)) continue;
     const plan = readJson(file);
-    const result = validatePlan(plan, { expectedId: meta.id, enforceSafety: false });
+    const result = validatePlan(plan, { expectedId: meta.id, enforceExclusions: false, excludedIngredients: household.excludedIngredients || [] });
     errors.push(...result.errors.map(item => ({ ...item, path: `${meta.file}:${item.path}` })));
     warnings.push(...result.warnings.map(item => ({ ...item, path: `${meta.file}:${item.path}` })));
     for (const key of ['title', 'startDate', 'endDate']) if (meta[key] !== plan[key]) errors.push({ code: 'index-metadata', path: `${meta.file}:${key}`, message: `Index ${key} does not match plan.` });
-    errors.push(...validateRecipeReferences(plan, recipes, false));
+    errors.push(...validateRecipeReferences(plan, recipes, { excludedIngredients: household.excludedIngredients || [] }));
   }
   return { valid: errors.length === 0, errors, warnings, counts: { plans: index.plans.length, recipes: recipes.size } };
 }
