@@ -11,7 +11,7 @@ GitHub is the source of truth. Preserve the static PWA, every historical file in
 5. Run `node scripts/publish-plan.js path/to/approved-plan.json --dry-run`, then publish without `--dry-run` only after validation succeeds.
 6. Commit only the new plan and updated `plans/index.json`, push through an actually connected GitHub tool, and report the real commit/publication result. Instructions alone do not establish GitHub access.
 
-Never publish an interactive draft without explicit approval. Scheduled Monday generation is separately pre-authorized through `.github/workflows/weekly-meal-plan.yml` and uses the managed recipe catalog. Both workflows must deterministically reject excluded ingredients from `config/household.json`.
+Never publish an interactive draft without explicit approval. Scheduled Monday generation is separately pre-authorized through `.github/workflows/weekly-meal-plan.yml` and uses the managed recipe catalog. Both workflows must deterministically reject excluded ingredients from `config/household.json` and any explicit plan to reuse cooked rice. Fresh rice and leftovers of other foods are allowed. Breakfasts and lunches do not require managed recipe references.
 
 ## Managed recipe lifecycle
 
@@ -30,4 +30,4 @@ Never promote recipes automatically based on log frequency. The GitHub catalog c
 
 ## Required checks
 
-Run `npm test` and `npm run validate`. New plans must pass schema, date, index, recipe-reference, and deterministic ingredient-exclusion checks. Historical plans are immutable legacy data; the all-data validator reports their current-rule conflicts as warnings rather than rewriting them. Exclusions are planning constraints, not medical-safety guarantees.
+Run `npm test` and `npm run validate`. New plans must pass schema, date, index, recipe-reference, deterministic ingredient-exclusion, and cooked-rice-reuse checks. Historical plans are immutable legacy data; the all-data validator reports their current-rule conflicts as warnings rather than rewriting them. Exclusions are planning constraints, not medical-safety guarantees. Never run the opt-in paid OpenAI smoke test without explicit user authorization.

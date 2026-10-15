@@ -59,10 +59,10 @@ The job:
 3. Exits successfully without changes if that indexed file already exists and is valid.
 4. Sends household rules, all 22 managed recipes, and four recent plans to the OpenAI Responses API. It has no Google Sheets dependency.
 5. Retries transient generation failures up to three times.
-6. Runs the same schema, date, recipe-reference, index, and deterministic ingredient-exclusion checks used by manual publishing.
+6. Runs the same schema, date, recipe-reference, index, ingredient-exclusion, and cooked-rice-reuse checks used by manual publishing.
 7. Writes and commits only the new plan and updated plan index.
 
-Malformed output, incomplete meals, a duplicate/partial week, an unknown recipe reference, or an explicitly excluded ingredient causes a nonzero exit without changing the repository. Missing nutrition, quantities, brand information, or manufacturer verification do not block a managed recipe. Recipes and historical plans are never changed by this workflow.
+Malformed output, incomplete meals, a duplicate/partial week, an unknown recipe reference, an explicitly excluded ingredient, or a plan to reuse cooked rice causes a nonzero exit without changing the repository. Freshly prepared rice and leftovers of other foods remain valid. Missing nutrition, quantities, brand information, or manufacturer verification do not block a managed recipe. Recipes and historical plans are never changed by this workflow.
 
 To rerun, open **Actions → Weekly meal plan → Run workflow**. Leave `target_week` blank for the current Central-time week or enter a Monday as `YYYY-MM-DD`.
 
@@ -71,6 +71,17 @@ Troubleshooting starts in the failed workflow log. Common causes are a missing/e
 ### API use and cost
 
 The scheduled job makes no paid call when a valid week already exists and normally makes one generation call for a missing week (up to three attempts after transient failures). Cost equals the selected model's current input/output token rates; the input includes the recipe catalog and four recent plans. Check OpenAI's current API pricing before enabling it and set account usage limits. In practice this is one modest text-generation request per generated week, but the repository does not promise a fixed dollar amount because catalog size, output length, retries, and model pricing vary.
+
+### Opt-in OpenAI integration smoke test
+
+The default test suite uses mocked responses and never makes a paid API request. An integration smoke test is available only through an explicit opt-in:
+
+```sh
+export OPENAI_API_KEY="your-key"
+RUN_OPENAI_SMOKE=1 npm run smoke:openai
+```
+
+`OPENAI_MODEL` and `SMOKE_WEEK` are optional. The smoke test makes exactly one OpenAI Responses API request, validates the structured response through the normal generator and publishing validators, and performs a dry-run publication inside a temporary repository copy. It verifies that neither the plan index nor plan files changed, removes the temporary copy, and never commits or pushes. Without `RUN_OPENAI_SMOKE=1`, it exits before making a request.
 
 ## Recipe management
 
@@ -97,7 +108,7 @@ node scripts/publish-plan.js path/to/approved-plan.json --dry-run
 node scripts/generate-weekly-plan.js --week 2026-09-07 --dry-run
 ```
 
-`npm run validate` checks every indexed historical file, all managed recipes, both manifests, structured recipe ingredients, consecutive Monday–Sunday dates, meal/portion completeness, optional nutrition types, filenames, missing files, duplicates, and excluded ingredients. Tests use mocked AI JSON and never make a paid request.
+`npm run validate` checks every indexed historical file, all managed recipes, both manifests, structured recipe ingredients, consecutive Monday–Sunday dates, meal/portion completeness, optional nutrition types, filenames, missing files, duplicates, excluded ingredients, and explicit cooked-rice reuse. Tests use mocked AI JSON and never make a paid request.
 
 ## Weekly plan shape
 
@@ -122,7 +133,7 @@ node scripts/generate-weekly-plan.js --week 2026-09-07 --dry-run
 }
 ```
 
-Meals may include a `recipeId` and `note`. When supplied, `recipeId` must exist. Automatically generated home-cooked dinners must reference a managed recipe; external meals such as takeout may use `null`.
+Meals may include a `recipeId` and `note`. When supplied, `recipeId` must exist. Automatically generated home-cooked dinners must reference a managed recipe; external dinners may use `null`. Breakfasts and lunches remain flexible and do not require managed recipe references.
 
 ## Current limitations
 

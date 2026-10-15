@@ -1,6 +1,7 @@
 'use strict';
 
 const assert = require('node:assert/strict');
+const { spawnSync } = require('node:child_process');
 const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
@@ -104,6 +105,23 @@ test('a shopping list containing an excluded ingredient is rejected', () => {
   });
 });
 
+test('publishing rejects an explicit plan to reuse cooked rice', () => {
+  const root = temporaryRepository();
+  const plan = makePlan();
+  plan.days[2].lunch = { name: 'Leftover cooked rice bowl', dusty: ['One household portion'], sam: ['One household portion'], recipeId: null, note: 'Reheat the rice from Tuesday.' };
+  assert.throws(() => publishPlan(root, writeFixture(root, plan)), error => {
+    assert.ok(error.results.errors.some(item => item.code === 'cooked-rice-reuse'), JSON.stringify(error.results.errors));
+    return true;
+  });
+});
+
+test('fresh rice and leftovers of other foods remain allowed', () => {
+  const root = temporaryRepository();
+  const plan = makePlan();
+  plan.days[2].lunch = { name: 'Leftover chicken with freshly prepared rice', dusty: ['One household portion'], sam: ['One household portion'], recipeId: null, note: 'Cook rice fresh; do not reuse cooked rice.' };
+  assert.equal(publishPlan(root, writeFixture(root, plan)).published, true);
+});
+
 test('missing nutrition and manufacturer-verification metadata do not block recipes or publication', () => {
   const recipe = makeRecipe('tomato sauce');
   delete recipe.nutritionPerServing;
@@ -116,14 +134,24 @@ test('missing nutrition and manufacturer-verification metadata do not block reci
   assert.equal(publishPlan(root, writeFixture(root, makePlan())).published, true);
 });
 
-test('automatic generation uses managed recipes and does not require Google Sheets', async () => {
+test('automatic generation uses managed dinner recipes, keeps breakfast and lunch flexible, and does not require Google Sheets', async () => {
   const root = temporaryRepository();
   const plan = makePlan();
+  assert.ok(plan.days.every(day => day.breakfast.recipeId === null && day.lunch.recipeId === null));
   const prompt = buildPrompt(root, plan.id);
   assert.match(prompt, /MANAGED_RECIPES=/);
   assert.doesNotMatch(prompt, /Google Sheets/i);
   const result = await generate({ root, target: plan.id, dryRun: false, responseFile: writeFixture(root, plan) });
   assert.equal(result.outcome, 'published');
+});
+
+test('OpenAI integration smoke test requires explicit paid-request opt-in', () => {
+  const env = { ...process.env };
+  delete env.RUN_OPENAI_SMOKE;
+  delete env.OPENAI_API_KEY;
+  const result = spawnSync(process.execPath, [path.join(ROOT, 'scripts', 'smoke-openai.js')], { cwd: ROOT, env, encoding: 'utf8' });
+  assert.equal(result.status, 1);
+  assert.match(result.stderr, /Refusing a paid API request/);
 });
 
 test('automatic generation rejects a home dinner without a managed recipe reference', async () => {

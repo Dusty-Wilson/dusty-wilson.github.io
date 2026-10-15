@@ -12,6 +12,7 @@ const EXCLUSION_PATTERNS = {
   coconut: /\b(?:coconuts?|coconut\s+(?:milk|cream|oil|flour|water|sugar|aminos)|copra)\b/gi
 };
 const PLANNING_EXCLUSIONS = { ...EXCLUSION_PATTERNS, 'green beans': /\bgreen\s+beans?\b/gi };
+const COOKED_RICE_REUSE_PATTERN = /\b(?:leftover|left-over|day-old|previously\s+cooked|pre-cooked|precooked|reheated|saved)\s+(?:(?:cooked|brown|white|wild)\s+){0,2}rice\b|\b(?:reuse|re-use|reheat|use\s+up)\s+(?:the\s+)?(?:(?:leftover|cooked|brown|white|wild)\s+)*rice\b/gi;
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -94,6 +95,20 @@ function findExcludedIngredients(text, excludedIngredients, includePlanningRules
   return matches;
 }
 
+function findCookedRiceReuse(text) {
+  if (typeof text !== 'string') return [];
+  const matches = [];
+  COOKED_RICE_REUSE_PATTERN.lastIndex = 0;
+  let match;
+  while ((match = COOKED_RICE_REUSE_PATTERN.exec(text)) !== null) {
+    const before = text.slice(Math.max(0, match.index - 32), match.index).toLowerCase();
+    const explicitlyProhibited = isNegatedMatch(text, match.index, match[0]) || /(?:do\s+not|don't|never|not|avoid|avoiding|omit|omitting|exclude|excluding|without|no)\s+(?:\w+\s+){0,2}$/.test(before);
+    if (!explicitlyProhibited) matches.push(match[0]);
+    if (match.index === COOKED_RICE_REUSE_PATTERN.lastIndex) COOKED_RICE_REUSE_PATTERN.lastIndex += 1;
+  }
+  return matches;
+}
+
 function recipeIngredientText(recipe) {
   const values = [];
   for (const ingredient of recipe.ingredients || []) values.push(ingredient.name, ingredient.preparation, ...(ingredient.substitutions || []));
@@ -132,9 +147,11 @@ function validatePlan(plan, options = {}) {
 
   if (options.enforceExclusions) {
     for (const value of collectPlanText(plan)) for (const match of findExcludedIngredients(value, options.excludedIngredients || [], true)) errors.push({ code: 'excluded-ingredient', path: 'plan', message: `Excluded ingredient (${match.group}, matched "${match.term}"): ${value}` });
+    for (const value of collectPlanText(plan)) for (const match of findCookedRiceReuse(value)) errors.push({ code: 'cooked-rice-reuse', path: 'plan', message: `Cooked rice must not be reused (matched "${match}"): ${value}` });
   } else {
     const matches = new Set();
     for (const value of collectPlanText(plan)) for (const match of findExcludedIngredients(value, options.excludedIngredients || [], true)) matches.add(match.group);
+    for (const value of collectPlanText(plan)) if (findCookedRiceReuse(value).length) matches.add('leftover cooked rice');
     if (matches.size) warnings.push({ code: 'legacy-rule-conflict', path: 'plan', message: `Historical plan contains current-rule conflicts: ${[...matches].join(', ')}.` });
   }
   return { valid: errors.length === 0, errors, warnings };
@@ -219,4 +236,4 @@ function publishPlan(root, sourceFile, options = {}) {
   return { published: !options.dryRun, planId: plan.id, destination, index: nextIndex };
 }
 
-module.exports = { DAYS, EXCLUSION_PATTERNS, addDays, findExcludedIngredients, mondayFor, publishPlan, readJson, recipeMap, titleForWeek, validateIndex, validatePlan, validateRecipe, validateRecipeReferences, writeJson };
+module.exports = { DAYS, EXCLUSION_PATTERNS, addDays, findCookedRiceReuse, findExcludedIngredients, mondayFor, publishPlan, readJson, recipeMap, titleForWeek, validateIndex, validatePlan, validateRecipe, validateRecipeReferences, writeJson };

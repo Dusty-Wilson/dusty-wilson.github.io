@@ -89,8 +89,9 @@ async function requestPlan(prompt, options = {}) {
   if (options.responseFile || process.env.GENERATOR_RESPONSE_FILE) return readJson(path.resolve(options.responseFile || process.env.GENERATOR_RESPONSE_FILE));
   if (!process.env.OPENAI_API_KEY) throw new Error('OPENAI_API_KEY is required when no mocked response file is supplied.');
   const model = process.env.OPENAI_MODEL || 'gpt-5.4-mini';
+  const maxAttempts = options.maxAttempts || 3;
   let lastError;
-  for (let attempt = 1; attempt <= 3; attempt += 1) {
+  for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
     try {
       const response = await fetch('https://api.openai.com/v1/responses', {
         method: 'POST',
@@ -101,7 +102,7 @@ async function requestPlan(prompt, options = {}) {
       return JSON.parse(responseText(await response.json()));
     } catch (error) {
       lastError = error;
-      if (attempt < 3) await new Promise(resolve => setTimeout(resolve, attempt * 1000));
+      if (attempt < maxAttempts) await new Promise(resolve => setTimeout(resolve, attempt * 1000));
     }
   }
   throw lastError;
@@ -120,7 +121,7 @@ async function generate(options) {
     if (!check.valid) throw new Error(`Existing plan ${week} is invalid; refusing to overwrite it.`);
     return { outcome: 'no-op', week, reason: 'valid plan already exists' };
   }
-  const plan = await requestPlan(buildPrompt(options.root, week), { responseFile: options.responseFile });
+  const plan = await requestPlan(buildPrompt(options.root, week), { responseFile: options.responseFile, maxAttempts: options.maxAttempts });
   const recipes = new Set(readJson(path.join(options.root, 'recipes', 'index.json')).recipes.map(recipe => recipe.id));
   for (const day of plan.days || []) {
     const dinner = day.dinner || {};
