@@ -1,0 +1,15 @@
+{
+  "name": "dusty-sam-meal-planner",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "validate": "node scripts/validate-meals.js",
+    "test": "node --test",
+    "generate": "node scripts/generate-weekly-plan.js",
+    "smoke:openai": "node scripts/smoke-openai.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

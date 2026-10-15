@@ -1,0 +1,67 @@
+name: Weekly meal plan
+
+on:
+  schedule:
+    - cron: "0 1 * * 1"
+      timezone: "America/Chicago"
+  workflow_dispatch:
+    inputs:
+      target_week:
+        description: "Optional Monday in YYYY-MM-DD format"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-meal-plan-publisher
+  cancel-in-progress: false
+
+jobs:
+  generate-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5.4-mini' }}
+      TARGET_WEEK: ${{ inputs.target_week }}
+    steps:
+      - name: Check out the latest default branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Validate repository data
+        run: npm run validate
+
+      - name: Run automated tests
+        run: npm test
+
+      - name: Check for or generate the target week
+        run: |
+          if [ -n "$TARGET_WEEK" ]; then
+            node scripts/generate-weekly-plan.js --week "$TARGET_WEEK"
+          else
+            node scripts/generate-weekly-plan.js
+          fi
+
+      - name: Validate generated repository state
+        run: npm run validate
+
+      - name: Commit a newly generated plan
+        run: |
+          if git diff --quiet -- plans; then
+            echo "A valid plan already exists; no repository changes are needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add plans
+          git commit -m "Add automated meal plan"
+          git push

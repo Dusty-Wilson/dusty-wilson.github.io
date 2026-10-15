@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "recipes": [
+    { "id": "beef-burritos", "name": "Beef burritos", "file": "beef-burritos.json" },
+    { "id": "beef-ragu", "name": "Beef ragù", "file": "beef-ragu.json" },
+    { "id": "big-mac-bowls", "name": "Big Mac bowls", "file": "big-mac-bowls.json" },
+    { "id": "broccoli-cheddar-soup", "name": "Broccoli cheddar soup", "file": "broccoli-cheddar-soup.json" },
+    { "id": "cajun-shrimp-rice", "name": "Cajun shrimp and rice", "file": "cajun-shrimp-rice.json" },
+    { "id": "chicken-caesar-wraps", "name": "Chicken Caesar wraps", "file": "chicken-caesar-wraps.json" },
+    { "id": "chicken-fajitas", "name": "Crockpot chicken fajitas", "file": "chicken-fajitas.json" },
+    { "id": "creamy-alfredo", "name": "Creamy Alfredo", "file": "creamy-alfredo.json" },
+    { "id": "creamy-orzo-turkey-meatballs", "name": "Creamy orzo with turkey meatballs and spinach", "file": "creamy-orzo-turkey-meatballs.json" },
+    { "id": "glazed-salmon-bowls", "name": "Glazed salmon bowls", "file": "glazed-salmon-bowls.json" },
+    { "id": "ground-turkey-carrot-spinach-bowls", "name": "Ground turkey, carrot and spinach rice bowls", "file": "ground-turkey-carrot-spinach-bowls.json" },
+    { "id": "hawaiian-chicken-tacos", "name": "Hawaiian chicken tacos", "file": "hawaiian-chicken-tacos.json" },
+    { "id": "korean-bbq-beef", "name": "Korean BBQ beef", "file": "korean-bbq-beef.json" },
+    { "id": "mediterranean-bowls", "name": "Mediterranean bowls", "file": "mediterranean-bowls.json" },
+    { "id": "pasta-carbonara", "name": "Carbonara", "file": "pasta-carbonara.json" },
+    { "id": "pesto-veggie-pasta", "name": "Pesto veggie pasta", "file": "pesto-veggie-pasta.json" },
+    { "id": "potato-sausage-soup", "name": "Potato sausage soup", "file": "potato-sausage-soup.json" },
+    { "id": "salmon-burgers", "name": "Salmon burgers", "file": "salmon-burgers.json" },
+    { "id": "sheet-pan-curry-chicken", "name": "Sheet-pan curry chicken", "file": "sheet-pan-curry-chicken.json" },
+    { "id": "spaghetti-meatballs", "name": "Spaghetti and meatballs", "file": "spaghetti-meatballs.json" },
+    { "id": "spinach-lasagna", "name": "Spinach lasagna", "file": "spinach-lasagna.json" },
+    { "id": "tortellini-soup", "name": "Tortellini soup", "file": "tortellini-soup.json" }
+  ]
+}
