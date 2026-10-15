@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "members": [
+    { "id": "dusty", "name": "Dusty", "separatePortions": true },
+    { "id": "sam", "name": "Sam", "separatePortions": true }
+  ],
+  "dietaryPatterns": ["Mediterranean", "MIND"],
+  "priorities": ["protein", "vegetables", "fiber", "reasonable calories", "simple weekday preparation"],
+  "allergens": {
+    "severity": "severe-cannot-be-in-house",
+    "prohibited": ["peanut", "tree nuts", "sesame", "coconut"],
+    "manufacturerStatusRule": "Packaged ingredients are unverified until their current label and cross-contact statement are reviewed."
+  },
+  "neverUse": ["green beans", "leftover cooked rice"],
+  "breakfastDefaults": {
+    "Monday": "MIND smoothie; Dusty may add two eggs",
+    "Tuesday": "local coffee-shop breakfast",
+    "Wednesday": "MIND smoothie; Dusty may add two eggs",
+    "Thursday": "MIND smoothie; Dusty may add two eggs",
+    "Friday": "local coffee-shop breakfast",
+    "Saturday": "pancakes",
+    "Sunday": "flexible breakfast"
+  },
+  "weeklyConventions": {
+    "Tuesday": "pasta night; tortellini soup is allowed when explicitly selected",
+    "takeoutSuggestions": { "count": 2, "location": "Cookeville, Tennessee", "whenPractical": true }
+  },
+  "shopping": {
+    "stores": ["Kroger", "Publix"],
+    "optimizeForNormalPackageSizes": true,
+    "avoidIngredientWaste": true
+  },
+  "leftovers": {
+    "useForEasyLunches": true,
+    "cookedRice": "never reuse; prepare rice fresh"
+  }
+}
