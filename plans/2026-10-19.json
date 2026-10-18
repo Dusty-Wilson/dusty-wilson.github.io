@@ -1,0 +1,401 @@
+{
+  "id": "2026-10-19",
+  "title": "October 19–25, 2026",
+  "startDate": "2026-10-19",
+  "endDate": "2026-10-25",
+  "updatedAt": "2026-10-18",
+  "days": [
+    {
+      "day": "Monday",
+      "date": "2026-10-19",
+      "breakfast": {
+        "name": "MIND smoothie + eggs",
+        "dusty": [
+          "1 MIND smoothie batch",
+          "2 eggs"
+        ],
+        "sam": [
+          "1 MIND smoothie batch",
+          "1 egg"
+        ],
+        "recipeId": null,
+        "note": "Dusty may add eggs per household default."
+      },
+      "lunch": {
+        "name": "Turkey and veggie wraps",
+        "dusty": [
+          "whole-grain wrap",
+          "deli turkey",
+          "spinach",
+          "tomato",
+          "cucumber"
+        ],
+        "sam": [
+          "whole-grain wrap",
+          "deli turkey",
+          "spinach",
+          "tomato",
+          "cucumber"
+        ],
+        "recipeId": null,
+        "note": "Simple lunch with fresh vegetables."
+      },
+      "dinner": {
+        "name": "Sheet-pan curry chicken",
+        "dusty": [
+          "chicken",
+          "bell peppers",
+          "onions",
+          "curry seasoning",
+          "pita"
+        ],
+        "sam": [
+          "chicken",
+          "bell peppers",
+          "onions",
+          "curry seasoning",
+          "pita"
+        ],
+        "recipeId": "sheet-pan-curry-chicken",
+        "note": "Serve with pita instead of rice."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-10-20",
+      "breakfast": {
+        "name": "Local coffee-shop breakfast",
+        "dusty": [
+          "coffee-shop breakfast item",
+          "coffee or tea"
+        ],
+        "sam": [
+          "coffee-shop breakfast item",
+          "coffee or tea"
+        ],
+        "recipeId": null,
+        "note": "Household Tuesday breakfast default."
+      },
+      "lunch": {
+        "name": "Leftover curry chicken pita wraps",
+        "dusty": [
+          "leftover chicken",
+          "leftover peppers and onions",
+          "pita"
+        ],
+        "sam": [
+          "leftover chicken",
+          "leftover peppers and onions",
+          "pita"
+        ],
+        "recipeId": "sheet-pan-curry-chicken",
+        "note": "Use leftovers from Monday dinner."
+      },
+      "dinner": {
+        "name": "Spaghetti and meatballs",
+        "dusty": [
+          "spaghetti",
+          "marinara sauce",
+          "meatballs"
+        ],
+        "sam": [
+          "spaghetti",
+          "marinara sauce",
+          "meatballs"
+        ],
+        "recipeId": "spaghetti-meatballs",
+        "note": "Tuesday pasta night."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Wednesday",
+      "date": "2026-10-21",
+      "breakfast": {
+        "name": "MIND smoothie + eggs",
+        "dusty": [
+          "1 MIND smoothie batch",
+          "2 eggs"
+        ],
+        "sam": [
+          "1 MIND smoothie batch",
+          "1 egg"
+        ],
+        "recipeId": null,
+        "note": "Dusty may add eggs per household default."
+      },
+      "lunch": {
+        "name": "Leftover spaghetti and meatballs",
+        "dusty": [
+          "leftover spaghetti",
+          "leftover meatballs"
+        ],
+        "sam": [
+          "leftover spaghetti",
+          "leftover meatballs"
+        ],
+        "recipeId": "spaghetti-meatballs",
+        "note": "Plan extra for a useful lunch leftover."
+      },
+      "dinner": {
+        "name": "Glazed salmon bowls",
+        "dusty": [
+          "skinless salmon",
+          "garlic",
+          "soy sauce",
+          "sriracha",
+          "honey",
+          "olive oil",
+          "rice",
+          "avocado"
+        ],
+        "sam": [
+          "skinless salmon",
+          "garlic",
+          "soy sauce",
+          "sriracha",
+          "honey",
+          "olive oil",
+          "rice",
+          "avocado"
+        ],
+        "recipeId": "glazed-salmon-bowls",
+        "note": "Cook rice fresh; do not reuse cooked rice."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-10-22",
+      "breakfast": {
+        "name": "MIND smoothie + eggs",
+        "dusty": [
+          "1 MIND smoothie batch",
+          "2 eggs"
+        ],
+        "sam": [
+          "1 MIND smoothie batch",
+          "1 egg"
+        ],
+        "recipeId": null,
+        "note": "Dusty may add eggs per household default."
+      },
+      "lunch": {
+        "name": "Salmon bowl leftovers",
+        "dusty": [
+          "leftover salmon",
+          "avocado",
+          "vegetables"
+        ],
+        "sam": [
+          "leftover salmon",
+          "avocado",
+          "vegetables"
+        ],
+        "recipeId": "glazed-salmon-bowls",
+        "note": "Keep any rice fresh if serving again."
+      },
+      "dinner": {
+        "name": "Mediterranean bowls",
+        "dusty": [
+          "turkey sausage",
+          "rice",
+          "broccoli",
+          "carrots",
+          "tzatziki"
+        ],
+        "sam": [
+          "turkey sausage",
+          "rice",
+          "broccoli",
+          "carrots",
+          "tzatziki"
+        ],
+        "recipeId": "mediterranean-bowls",
+        "note": "Use fresh rice only."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Friday",
+      "date": "2026-10-23",
+      "breakfast": {
+        "name": "Local coffee-shop breakfast",
+        "dusty": [
+          "coffee-shop breakfast item",
+          "coffee or tea"
+        ],
+        "sam": [
+          "coffee-shop breakfast item",
+          "coffee or tea"
+        ],
+        "recipeId": null,
+        "note": "Household Friday breakfast default."
+      },
+      "lunch": {
+        "name": "Mediterranean bowl leftovers",
+        "dusty": [
+          "leftover turkey sausage",
+          "leftover vegetables"
+        ],
+        "sam": [
+          "leftover turkey sausage",
+          "leftover vegetables"
+        ],
+        "recipeId": "mediterranean-bowls",
+        "note": "Use leftovers before opening new items."
+      },
+      "dinner": {
+        "name": "Takeout in Cookeville",
+        "dusty": [
+          "grilled chicken plate",
+          "salad",
+          "vegetables"
+        ],
+        "sam": [
+          "grilled chicken plate",
+          "salad",
+          "vegetables"
+        ],
+        "recipeId": null,
+        "note": "Practical takeout suggestion: Mediterranean grilled chicken and vegetables."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-10-24",
+      "breakfast": {
+        "name": "Pancakes",
+        "dusty": [
+          "pancakes",
+          "eggs",
+          "berries"
+        ],
+        "sam": [
+          "pancakes",
+          "eggs",
+          "berries"
+        ],
+        "recipeId": null,
+        "note": "Household Saturday default."
+      },
+      "lunch": {
+        "name": "Easy sandwich lunch",
+        "dusty": [
+          "whole-grain bread",
+          "turkey",
+          "lettuce",
+          "tomato"
+        ],
+        "sam": [
+          "whole-grain bread",
+          "turkey",
+          "lettuce",
+          "tomato"
+        ],
+        "recipeId": null,
+        "note": "Keep lunch simple after pancakes."
+      },
+      "dinner": {
+        "name": "Broccoli cheddar soup",
+        "dusty": [
+          "broccoli",
+          "cheddar cheese",
+          "broth"
+        ],
+        "sam": [
+          "broccoli",
+          "cheddar cheese",
+          "broth"
+        ],
+        "recipeId": "broccoli-cheddar-soup",
+        "note": "Comforting dinner with vegetables."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-10-25",
+      "breakfast": {
+        "name": "Flexible breakfast",
+        "dusty": [
+          "eggs",
+          "toast",
+          "fruit"
+        ],
+        "sam": [
+          "eggs",
+          "toast",
+          "fruit"
+        ],
+        "recipeId": null,
+        "note": "Household Sunday default is flexible."
+      },
+      "lunch": {
+        "name": "Soup leftovers",
+        "dusty": [
+          "leftover broccoli cheddar soup"
+        ],
+        "sam": [
+          "leftover broccoli cheddar soup"
+        ],
+        "recipeId": "broccoli-cheddar-soup",
+        "note": "Use remaining soup for lunch."
+      },
+      "dinner": {
+        "name": "Takeout in Cookeville",
+        "dusty": [
+          "Mexican burrito bowl",
+          "grilled protein",
+          "vegetables"
+        ],
+        "sam": [
+          "Mexican burrito bowl",
+          "grilled protein",
+          "vegetables"
+        ],
+        "recipeId": null,
+        "note": "Practical takeout suggestion: burrito bowl with grilled protein and vegetables."
+      },
+      "dayNotes": []
+    }
+  ],
+  "groceries": [
+    "chicken",
+    "bell peppers",
+    "onions",
+    "curry seasoning",
+    "pita",
+    "whole-grain wrap",
+    "deli turkey",
+    "spinach",
+    "tomatoes",
+    "cucumber",
+    "spaghetti",
+    "marinara sauce",
+    "meatballs",
+    "broccoli",
+    "skinless salmon",
+    "garlic",
+    "soy sauce",
+    "sriracha",
+    "honey",
+    "olive oil",
+    "avocado",
+    "turkey sausage",
+    "rice",
+    "tzatziki",
+    "pancake mix",
+    "eggs",
+    "berries",
+    "whole-grain bread",
+    "lettuce",
+    "cheddar cheese",
+    "broth",
+    "fruit",
+    "coffee-shop breakfast funds",
+    "takeout funds"
+  ]
+}
