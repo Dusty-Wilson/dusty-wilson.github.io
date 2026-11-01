@@ -1,0 +1,353 @@
+{
+  "id": "2026-11-02",
+  "title": "November 2–8, 2026",
+  "startDate": "2026-11-02",
+  "endDate": "2026-11-08",
+  "updatedAt": "2026-11-01",
+  "days": [
+    {
+      "day": "Monday",
+      "date": "2026-11-02",
+      "breakfast": {
+        "name": "MIND smoothie + eggs",
+        "dusty": [
+          "1 MIND smoothie batch",
+          "2 eggs"
+        ],
+        "sam": [
+          "1 MIND smoothie batch",
+          "1 egg"
+        ],
+        "recipeId": null,
+        "note": "Household weekday breakfast default."
+      },
+      "lunch": {
+        "name": "Flexible lunch",
+        "dusty": [
+          "simple lunch of choice"
+        ],
+        "sam": [
+          "simple lunch of choice"
+        ],
+        "recipeId": null,
+        "note": "No specific Monday lunch was selected for this week."
+      },
+      "dinner": {
+        "name": "Sheet-pan salmon with roasted broccoli and lemon potatoes",
+        "dusty": [
+          "salmon fillet",
+          "roasted broccoli",
+          "lemon-roasted baby potatoes"
+        ],
+        "sam": [
+          "salmon fillet",
+          "roasted broccoli",
+          "lemon-roasted baby potatoes"
+        ],
+        "recipeId": null,
+        "note": "Use frozen salmon and broccoli; roast potatoes on the same sheet pan."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-11-03",
+      "breakfast": {
+        "name": "Local coffee-shop breakfast",
+        "dusty": [
+          "coffee-shop egg breakfast sandwich",
+          "coffee or tea"
+        ],
+        "sam": [
+          "coffee-shop egg breakfast sandwich",
+          "coffee or tea"
+        ],
+        "recipeId": null,
+        "note": "Household Tuesday breakfast default."
+      },
+      "lunch": {
+        "name": "Flexible lunch",
+        "dusty": [
+          "simple lunch of choice"
+        ],
+        "sam": [
+          "simple lunch of choice"
+        ],
+        "recipeId": null,
+        "note": "No specific Tuesday lunch was selected for this week."
+      },
+      "dinner": {
+        "name": "Creamy orzo with turkey meatballs and spinach",
+        "dusty": [
+          "orzo pasta",
+          "turkey meatballs",
+          "spinach",
+          "broth, milk and Parmesan sauce"
+        ],
+        "sam": [
+          "orzo pasta",
+          "turkey meatballs",
+          "spinach",
+          "broth, milk and Parmesan sauce"
+        ],
+        "recipeId": "creamy-orzo-turkey-meatballs",
+        "note": "Tuesday pasta night. Make enough for Wednesday lunch."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Wednesday",
+      "date": "2026-11-04",
+      "breakfast": {
+        "name": "MIND smoothie + eggs",
+        "dusty": [
+          "1 MIND smoothie batch",
+          "2 eggs"
+        ],
+        "sam": [
+          "1 MIND smoothie batch",
+          "1 egg"
+        ],
+        "recipeId": null,
+        "note": "Household weekday breakfast default."
+      },
+      "lunch": {
+        "name": "Leftover creamy orzo with turkey meatballs",
+        "dusty": [
+          "leftover orzo",
+          "leftover turkey meatballs",
+          "spinach"
+        ],
+        "sam": [
+          "leftover orzo",
+          "leftover turkey meatballs",
+          "spinach"
+        ],
+        "recipeId": "creamy-orzo-turkey-meatballs",
+        "note": "Use portions saved from Tuesday dinner."
+      },
+      "dinner": {
+        "name": "Beef Big Mac bowls with roasted potatoes",
+        "dusty": [
+          "seasoned ground beef",
+          "romaine lettuce",
+          "dill pickles",
+          "onion",
+          "Thousand Island dressing",
+          "roasted potatoes"
+        ],
+        "sam": [
+          "seasoned ground beef",
+          "romaine lettuce",
+          "dill pickles",
+          "onion",
+          "Thousand Island dressing",
+          "roasted potatoes"
+        ],
+        "recipeId": "big-mac-bowls",
+        "note": "Use roasted potatoes instead of the managed recipe's usual fresh rice. Cook ground chicken separately and bake lunch potatoes for Thursday and Friday."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-11-05",
+      "breakfast": {
+        "name": "MIND smoothie + eggs",
+        "dusty": [
+          "1 MIND smoothie batch",
+          "2 eggs"
+        ],
+        "sam": [
+          "1 MIND smoothie batch",
+          "1 egg"
+        ],
+        "recipeId": null,
+        "note": "Household weekday breakfast default."
+      },
+      "lunch": {
+        "name": "Loaded baked potatoes with ground chicken and broccoli",
+        "dusty": [
+          "baked potato",
+          "seasoned ground chicken",
+          "broccoli",
+          "shredded cheddar",
+          "plain Greek yogurt"
+        ],
+        "sam": [
+          "baked potato",
+          "seasoned ground chicken",
+          "broccoli",
+          "shredded cheddar",
+          "plain Greek yogurt"
+        ],
+        "recipeId": null,
+        "note": "Use ground chicken and potatoes prepared Wednesday night."
+      },
+      "dinner": {
+        "name": "Shrimp tacos with cabbage slaw and chipotle lime sauce",
+        "dusty": [
+          "shrimp",
+          "small tortillas",
+          "cabbage slaw",
+          "chipotle lime sauce"
+        ],
+        "sam": [
+          "shrimp",
+          "small tortillas",
+          "cabbage slaw",
+          "chipotle lime sauce"
+        ],
+        "recipeId": null,
+        "note": "Use frozen shrimp; make sauce with chipotle, lime and Greek yogurt or a prepared chipotle mayo."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Friday",
+      "date": "2026-11-06",
+      "breakfast": {
+        "name": "Local coffee-shop breakfast",
+        "dusty": [
+          "coffee-shop egg breakfast sandwich",
+          "coffee or tea"
+        ],
+        "sam": [
+          "coffee-shop egg breakfast sandwich",
+          "coffee or tea"
+        ],
+        "recipeId": null,
+        "note": "Household Friday breakfast default."
+      },
+      "lunch": {
+        "name": "Leftover loaded baked potatoes",
+        "dusty": [
+          "baked potato",
+          "leftover seasoned ground chicken",
+          "broccoli",
+          "shredded cheddar",
+          "plain Greek yogurt"
+        ],
+        "sam": [
+          "baked potato",
+          "leftover seasoned ground chicken",
+          "broccoli",
+          "shredded cheddar",
+          "plain Greek yogurt"
+        ],
+        "recipeId": null,
+        "note": "Use the remaining prepared potato toppings from Wednesday."
+      },
+      "dinner": {
+        "name": "Takeout in Cookeville",
+        "dusty": [
+          "takeout dinner of choice"
+        ],
+        "sam": [
+          "takeout dinner of choice"
+        ],
+        "recipeId": null,
+        "note": "Options: El Compa Tacos (chicken tacos or burrito bowl) or The Iron Kitchen (chicken bowl or wrap)."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-11-07",
+      "breakfast": {
+        "name": "Pancakes",
+        "dusty": [
+          "pancakes",
+          "eggs or fruit as desired"
+        ],
+        "sam": [
+          "pancakes",
+          "eggs or fruit as desired"
+        ],
+        "recipeId": null,
+        "note": "Household Saturday breakfast default."
+      },
+      "lunch": {
+        "name": "Flexible lunch",
+        "dusty": [
+          "simple lunch of choice"
+        ],
+        "sam": [
+          "simple lunch of choice"
+        ],
+        "recipeId": null,
+        "note": "No specific Saturday lunch was selected."
+      },
+      "dinner": {
+        "name": "Flexible dinner or leftovers",
+        "dusty": [
+          "leftovers or dinner of choice"
+        ],
+        "sam": [
+          "leftovers or dinner of choice"
+        ],
+        "recipeId": null,
+        "note": "No additional cooking planned."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-11-08",
+      "breakfast": {
+        "name": "Flexible breakfast",
+        "dusty": [
+          "breakfast of choice"
+        ],
+        "sam": [
+          "breakfast of choice"
+        ],
+        "recipeId": null,
+        "note": "Household Sunday default."
+      },
+      "lunch": {
+        "name": "Flexible lunch",
+        "dusty": [
+          "simple lunch of choice"
+        ],
+        "sam": [
+          "simple lunch of choice"
+        ],
+        "recipeId": null,
+        "note": "No specific Sunday lunch was selected."
+      },
+      "dinner": {
+        "name": "Flexible dinner or leftovers",
+        "dusty": [
+          "leftovers or dinner of choice"
+        ],
+        "sam": [
+          "leftovers or dinner of choice"
+        ],
+        "recipeId": null,
+        "note": "No additional cooking planned."
+      },
+      "dayNotes": []
+    }
+  ],
+  "groceries": [
+    "Baby potatoes (1 large bag; shared Monday, Wednesday and lunches)",
+    "Baby spinach (1 container)",
+    "Onions (2)",
+    "Lemons (2)",
+    "Limes (2–3)",
+    "Chicken broth",
+    "Orzo (1 box)",
+    "Parmesan cheese",
+    "Milk or half-and-half",
+    "Ground beef (1 lb)",
+    "Romaine lettuce",
+    "Dill pickles",
+    "Thousand Island dressing",
+    "Small flour or corn tortillas",
+    "Bagged cabbage slaw mix",
+    "Chipotle mayo or chipotle peppers in adobo",
+    "Shredded cheddar",
+    "Plain Greek yogurt"
+  ]
+}
