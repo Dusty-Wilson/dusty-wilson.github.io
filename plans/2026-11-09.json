@@ -1,0 +1,368 @@
+{
+  "id": "2026-11-09",
+  "title": "November 9–15, 2026",
+  "startDate": "2026-11-09",
+  "endDate": "2026-11-15",
+  "updatedAt": "2026-11-08",
+  "days": [
+    {
+      "day": "Monday",
+      "date": "2026-11-09",
+      "breakfast": {
+        "name": "MIND smoothie + eggs",
+        "dusty": [
+          "1 MIND smoothie batch with updated honey/flaxseed",
+          "2 eggs"
+        ],
+        "sam": [
+          "1 MIND smoothie batch with updated honey/flaxseed",
+          "1 egg"
+        ],
+        "recipeId": null,
+        "note": "Household weekday smoothie recipe; half the former honey and twice the former flaxseed."
+      },
+      "lunch": {
+        "name": "Gifted homemade vegetable soup",
+        "dusty": [
+          "vegetable soup"
+        ],
+        "sam": [
+          "vegetable soup"
+        ],
+        "recipeId": null,
+        "note": "Use the gifted soup early in the week; no ingredients to buy."
+      },
+      "dinner": {
+        "name": "Ground beef, sweet potato, hot honey and rice bowls",
+        "dusty": [
+          "ground beef",
+          "roasted sweet potatoes",
+          "freshly cooked rice",
+          "spinach",
+          "onion",
+          "hot honey"
+        ],
+        "sam": [
+          "ground beef",
+          "roasted sweet potatoes",
+          "freshly cooked rice",
+          "spinach",
+          "onion",
+          "hot honey"
+        ],
+        "recipeId": null,
+        "note": "Approved custom version drafted from household description; onion and spinach are assumptions, not a verified saved recipe."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Tuesday",
+      "date": "2026-11-10",
+      "breakfast": {
+        "name": "Local coffee-shop breakfast",
+        "dusty": [
+          "coffee-shop egg breakfast sandwich",
+          "coffee or tea"
+        ],
+        "sam": [
+          "coffee-shop egg breakfast sandwich",
+          "coffee or tea"
+        ],
+        "recipeId": null,
+        "note": "Household Tuesday/Friday default."
+      },
+      "lunch": {
+        "name": "Chicken and black bean quesadillas",
+        "dusty": [
+          "canned chicken",
+          "black beans",
+          "spicy refried beans",
+          "whole-wheat tortillas",
+          "cheddar",
+          "olive oil"
+        ],
+        "sam": [
+          "canned chicken",
+          "black beans",
+          "spicy refried beans",
+          "whole-wheat tortillas",
+          "cheddar",
+          "olive oil"
+        ],
+        "recipeId": null,
+        "note": "Household logged recipe: 2 whole quesadillas, 4 half portions; 2 tbsp olive oil for the full batch."
+      },
+      "dinner": {
+        "name": "Spaghetti with turkey meatballs and marinara",
+        "dusty": [
+          "spaghetti",
+          "turkey meatballs",
+          "marinara sauce"
+        ],
+        "sam": [
+          "spaghetti",
+          "turkey meatballs",
+          "marinara sauce"
+        ],
+        "recipeId": "spaghetti-meatballs",
+        "note": "Tuesday pasta night. Make enough for Wednesday lunch."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Wednesday",
+      "date": "2026-11-11",
+      "breakfast": {
+        "name": "MIND smoothie + eggs",
+        "dusty": [
+          "1 MIND smoothie batch with updated honey/flaxseed",
+          "2 eggs"
+        ],
+        "sam": [
+          "1 MIND smoothie batch with updated honey/flaxseed",
+          "1 egg"
+        ],
+        "recipeId": null,
+        "note": "Household weekday smoothie recipe; half the former honey and twice the former flaxseed."
+      },
+      "lunch": {
+        "name": "Leftover spaghetti and turkey meatballs",
+        "dusty": [
+          "leftover spaghetti",
+          "leftover turkey meatballs",
+          "marinara"
+        ],
+        "sam": [
+          "leftover spaghetti",
+          "leftover turkey meatballs",
+          "marinara"
+        ],
+        "recipeId": "spaghetti-meatballs",
+        "note": "Reserve lunch portions from Tuesday dinner."
+      },
+      "dinner": {
+        "name": "Cajun shrimp and rice",
+        "dusty": [
+          "shrimp",
+          "freshly cooked rice",
+          "red bell pepper",
+          "onion",
+          "Cajun seasoning",
+          "ghee",
+          "chicken broth"
+        ],
+        "sam": [
+          "shrimp",
+          "freshly cooked rice",
+          "red bell pepper",
+          "onion",
+          "Cajun seasoning",
+          "ghee",
+          "chicken broth"
+        ],
+        "recipeId": "cajun-shrimp-rice",
+        "note": "Use about half the usual four-serving recipe for two; keep unused shrimp frozen."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Thursday",
+      "date": "2026-11-12",
+      "breakfast": {
+        "name": "MIND smoothie + eggs",
+        "dusty": [
+          "1 MIND smoothie batch with updated honey/flaxseed",
+          "2 eggs"
+        ],
+        "sam": [
+          "1 MIND smoothie batch with updated honey/flaxseed",
+          "1 egg"
+        ],
+        "recipeId": null,
+        "note": "Household weekday smoothie recipe; half the former honey and twice the former flaxseed."
+      },
+      "lunch": {
+        "name": "Loaded baked potatoes with chicken, broccoli, cheddar and Greek yogurt",
+        "dusty": [
+          "baked russet potato",
+          "canned chicken",
+          "broccoli",
+          "shredded cheddar",
+          "plain Greek yogurt"
+        ],
+        "sam": [
+          "baked russet potato",
+          "canned chicken",
+          "broccoli",
+          "shredded cheddar",
+          "plain Greek yogurt"
+        ],
+        "recipeId": null,
+        "note": "Second can of chicken serves this lunch; roast/bake potatoes Wednesday evening."
+      },
+      "dinner": {
+        "name": "Glazed salmon bowls with rice and avocado",
+        "dusty": [
+          "glazed salmon",
+          "freshly cooked white rice",
+          "avocado"
+        ],
+        "sam": [
+          "glazed salmon",
+          "freshly cooked white rice",
+          "avocado"
+        ],
+        "recipeId": "glazed-salmon-bowls",
+        "note": "Two-serving recipe: 2 tsp each garlic, sriracha and honey plus 1 tsp soy sauce across the glaze batch; cook rice fresh."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Friday",
+      "date": "2026-11-13",
+      "breakfast": {
+        "name": "Local coffee-shop breakfast",
+        "dusty": [
+          "coffee-shop egg breakfast sandwich",
+          "coffee or tea"
+        ],
+        "sam": [
+          "coffee-shop egg breakfast sandwich",
+          "coffee or tea"
+        ],
+        "recipeId": null,
+        "note": "Household Tuesday/Friday default."
+      },
+      "lunch": {
+        "name": "Flexible lunch",
+        "dusty": [
+          "simple lunch of choice"
+        ],
+        "sam": [
+          "simple lunch of choice"
+        ],
+        "recipeId": null,
+        "note": "No specific lunch selected."
+      },
+      "dinner": {
+        "name": "Takeout in Cookeville",
+        "dusty": [
+          "takeout dinner of choice"
+        ],
+        "sam": [
+          "takeout dinner of choice"
+        ],
+        "recipeId": null,
+        "note": "Options: The Iron Kitchen (chicken bowl or wrap) or El Compa Tacos (chicken tacos or burrito bowl)."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Saturday",
+      "date": "2026-11-14",
+      "breakfast": {
+        "name": "Pancakes",
+        "dusty": [
+          "pancakes",
+          "eggs or fruit as desired"
+        ],
+        "sam": [
+          "pancakes",
+          "eggs or fruit as desired"
+        ],
+        "recipeId": null,
+        "note": "Household Saturday breakfast default."
+      },
+      "lunch": {
+        "name": "Flexible lunch",
+        "dusty": [
+          "simple lunch of choice"
+        ],
+        "sam": [
+          "simple lunch of choice"
+        ],
+        "recipeId": null,
+        "note": "No specific lunch selected."
+      },
+      "dinner": {
+        "name": "Flexible dinner or leftovers",
+        "dusty": [
+          "leftovers or dinner of choice"
+        ],
+        "sam": [
+          "leftovers or dinner of choice"
+        ],
+        "recipeId": null,
+        "note": "No additional cooking planned."
+      },
+      "dayNotes": []
+    },
+    {
+      "day": "Sunday",
+      "date": "2026-11-15",
+      "breakfast": {
+        "name": "Flexible breakfast",
+        "dusty": [
+          "breakfast of choice"
+        ],
+        "sam": [
+          "breakfast of choice"
+        ],
+        "recipeId": null,
+        "note": "Household Sunday default."
+      },
+      "lunch": {
+        "name": "Flexible lunch",
+        "dusty": [
+          "simple lunch of choice"
+        ],
+        "sam": [
+          "simple lunch of choice"
+        ],
+        "recipeId": null,
+        "note": "No specific lunch selected."
+      },
+      "dinner": {
+        "name": "Flexible dinner or leftovers",
+        "dusty": [
+          "leftovers or dinner of choice"
+        ],
+        "sam": [
+          "leftovers or dinner of choice"
+        ],
+        "recipeId": null,
+        "note": "No additional cooking planned."
+      },
+      "dayNotes": []
+    }
+  ],
+  "groceries": [
+    "Rice (1 bag; cook fresh separately for Monday, Wednesday and Thursday)",
+    "Yellow onions (2, shared between Monday and Wednesday)",
+    "Garlic",
+    "Shredded cheddar (1 bag, shared between lunches)",
+    "Plain Greek yogurt (1 container)",
+    "Chicken broth",
+    "Olive oil, if needed",
+    "Ground beef (1 lb)",
+    "Sweet potatoes (2–3)",
+    "Hot honey",
+    "Baby spinach",
+    "Spaghetti (1 box)",
+    "Marinara sauce (1 jar)",
+    "Turkey meatballs (check freezer first)",
+    "Shrimp (1 lb bag; use half, freeze rest)",
+    "Red bell peppers (1–2)",
+    "Ghee, if needed",
+    "Cajun seasoning, if needed",
+    "Salmon fillets (2)",
+    "Avocado (1)",
+    "Sriracha, soy sauce, and honey, if needed",
+    "Canned chicken (2 large cans, shared across lunches)",
+    "Black beans (1 can)",
+    "Spicy refried beans (1 can; freeze unused portion)",
+    "Whole-wheat tortillas (1 package)",
+    "Russet potatoes (2 large)",
+    "Broccoli (frozen is fine)"
+  ]
+}
